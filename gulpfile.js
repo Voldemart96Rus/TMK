@@ -76,7 +76,7 @@ gulp.task('serve', () => {
         server: 'app/',
     });
 
-    gulp.watch('app/index.html').on('change', browserSync.reload);
+    gulp.watch('app/**.html').on('change', browserSync.reload);
     gulp.watch('app/img/**').on('change', browserSync.reload);
     gulp.watch(['app/css/**', '!app/**/*.min.**']).on(
         'change',

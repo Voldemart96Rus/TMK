@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
-    --main-color: #0e0e3b;
+    /* --main-color: #0e0e3b; */
+    --main-color: #004f8f;
+    --main-color-light: #a4d6ff;
+    --main-color-dark: #003b6b;
+    --main-color-opaque: #004f8f70;
 }
 
 body {
@@ -17,15 +21,26 @@ a:hover {
     text-decoration: none;
 }
 
-ul,
-ol {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+h5 {
+    font-size: 1rem;
+}
+
+.text-lg {
+    font-size: 1.2rem;
+}
+
 .text-sm {
     font-size: 0.8rem;
+}
+
+.bg-lightgrey {
+    background-color: lightgrey;
 }
 
 /* Content */
@@ -42,6 +57,25 @@ ol {
     z-index: 1;
     position: fixed;
     width: 100%;
+    opacity: 0.9;
+    background: #181818 !important;
+}
+
+.navbar-brand {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #228ce2 !important;
+}
+
+.navbar-brand:hover {
+    color: var(--main-color-light) !important;
+}
+
+.navbar-brand__logo {
+    width: 2.2rem;
+    margin-right: 1rem;
+    color: inherit;
+    fill: currentColor;
 }
 
 /* Catalog */
@@ -52,7 +86,9 @@ ol {
 }
 
 .category-heading {
-    background: #0e0e3bd5;
+    /* background: #0e0e3bd5; */
+    background: var(--main-color);
+    opacity: 0.9;
 }
 
 .category-menu {
@@ -66,21 +102,22 @@ ol {
     border-bottom: none;
 }
 
-.category-menu:hover + .category-menu {
+.category-menu:hover+.category-menu {
     border-top-color: var(--main-color);
 }
 
 .category-menu:hover {
     position: relative;
-    background-color: #1b1b6f50;
+    /* background-color: #1b1b6f50; */
+    background: var(--main-color-opaque);
     border-color: var(--main-color);
-    color: var(--main-color);
+    color: var(--main-color-dark);
     /* box-shadow: 2px 0px 7px 0px rgba(50, 50, 50, 0.75); */
     /* box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75); */
 }
 
 .category-menu::after {
-    color: #000;
+    color: inherit;
     content: '\f105';
     top: 50%;
     transform: translateY(-50%);
@@ -111,8 +148,25 @@ ol {
 
 .block__header {
     height: 50px;
-    color: #0e0e3b;
-    border-bottom: 2px solid #0e0e3b;
+    color: var(--main-color);
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+}
+
+.block__image {
+    width: 100%;
+}
+
+/* Quality */
+
+/* 
+.quality h4, .quality h5 {
+    margin: 1.5rem 0;
+} */
+
+.card-img {
+    object-fit: cover;
+    height: 100%;
 }
 
 /* Footer */

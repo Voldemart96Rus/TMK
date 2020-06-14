@@ -4,14 +4,13 @@ import './Navbar.css';
 
 const Navbar = () => {
     const current = window.location.pathname;
-    console.info(current === '/');
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container d-flex align-items-center">
                 <a className="navbar-brand d-flex" href="/#!">
                     <img
                         className="navbar-brand__logo"
-                        src="favicon.svg"
+                        src="/favicon.svg"
                         alt="Лого"
                     />
                     <div>
@@ -54,9 +53,7 @@ const Navbar = () => {
                     </li>
                     <li
                         className={
-                            current === '/active'
-                                ? 'nav-item active'
-                                : 'nav-item'
+                            current === '/job' ? 'nav-item active' : 'nav-item'
                         }
                     >
                         <a className="nav-link" href="/job">

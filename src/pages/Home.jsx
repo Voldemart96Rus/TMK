@@ -12,7 +12,7 @@ function Home() {
                         <h3 className="block__header">О компании</h3>
                         <img
                             className="block__image"
-                            src="img/pipes.jpg"
+                            src="img/home.webp"
                             alt="Трубы"
                         />
                     </section>

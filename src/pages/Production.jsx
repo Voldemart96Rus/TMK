@@ -63,7 +63,7 @@ const Production = () => {
                                             </h5>
                                         </div>
                                         <img
-                                            src="img/tmk-prod-md.jpg"
+                                            src="img/zinc.jpe"
                                             className="card-img-bottom"
                                             alt="Производство оцинкованной оболочки"
                                         />

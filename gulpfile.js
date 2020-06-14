@@ -24,6 +24,7 @@ gulp.task('styles', () => {
             'node_modules/swiper/css/swiper.min.css',
             'node_modules/bootstrap/dist/css/bootstrap.min.css',
             'app/css/style.css',
+            'app/css/truck-animation.css',
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('index.min.css'))
@@ -76,7 +77,7 @@ gulp.task('serve', () => {
         server: 'app/',
     });
 
-    gulp.watch('app/index.html').on('change', browserSync.reload);
+    gulp.watch('app/**.html').on('change', browserSync.reload);
     gulp.watch('app/img/**').on('change', browserSync.reload);
     gulp.watch(['app/css/**', '!app/**/*.min.**']).on(
         'change',

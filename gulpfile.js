@@ -24,6 +24,7 @@ gulp.task('styles', () => {
             'node_modules/swiper/css/swiper.min.css',
             'node_modules/bootstrap/dist/css/bootstrap.min.css',
             'app/css/style.css',
+            'app/css/truck-animation.css',
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('index.min.css'))

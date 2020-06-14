@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,500&display=swap');
+
 * {
     box-sizing: border-box;
     /* --main-color: #0e0e3b; */
@@ -8,6 +10,7 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     position: relative;
 }
 
@@ -25,6 +28,15 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
 }
 
 h5 {
@@ -102,7 +114,7 @@ h5 {
     border-bottom: none;
 }
 
-.category-menu:hover+.category-menu {
+.category-menu:hover + .category-menu {
     border-top-color: var(--main-color);
 }
 

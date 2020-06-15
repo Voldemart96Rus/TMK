@@ -4,7 +4,7 @@ import './Catalog.css';
 
 const Catalog = () => {
     return (
-        <div className="col-md-3">
+        <div className="col-5 col-lg-3 catalog-wrapper">
             <div className="left-category-menu hidden-sm hidden-xs">
                 <div className="left-product-cat">
                     <div className="category-heading">
@@ -12,26 +12,22 @@ const Catalog = () => {
                     </div>
                     <div className="category-menu-list">
                         <ul className="catalog">
-                            <li className="menu-hidden category-menu">
-                                <a
-                                    href="/opory-truboprovodov/"
-                                    className="catalog-links"
-                                >
+                            <li className="category-menu">
+                                <a href="#!" className="catalog-links">
                                     Опоры трубопроводов
                                 </a>
 
-                                <div className="cat-left-drop-menu" hidden>
-                                    <div className="cat-left-drop-menu-left">
+                                <div className="hidden-menu">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-spo/"
                                         >
                                             Опоры скользящие СПО
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-homutovye-313-ts-008-011/"
@@ -39,170 +35,153 @@ const Catalog = () => {
                                             Опоры скользящие хомутовые
                                             313.ТС-008.011
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-homutovye-fso-1/"
                                         >
                                             Опоры скользящие хомутовые ФСО 1
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-homutovye-fso-2/"
                                         >
                                             Опоры скользящие хомутовые ФСО 2
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-privarnye-opb1/"
                                         >
                                             Опоры скользящие приварные ОПБ1
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-privarnye-opb2/"
                                         >
                                             Опоры скользящие приварные ОПБ2
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-privarnye-opp1/"
                                         >
                                             Опоры скользящие приварные ОПП1
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-opp2/"
                                         >
                                             Опоры скользящие ОПП2
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-homutovye-oph1/"
                                         >
                                             Опоры скользящие хомутовые ОПХ1
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-homutovye-oph2/"
                                         >
                                             Опоры скользящие хомутовые ОПХ2
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-homutovye-oph3/"
                                         >
                                             Опоры скользящие хомутовые ОПХ3
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-t13/"
                                         >
                                             Опоры скользящие Т13
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-t14/"
                                         >
                                             Опоры скользящие Т14
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-ts-623/"
                                         >
                                             Опоры скользящие ТС-623
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-ts-624/"
                                         >
                                             Опоры скользящие ТС-624
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-ts-625/"
                                         >
                                             Опоры скользящие ТС-625
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-skolzyashchie-ts-631/"
                                         >
                                             Опоры скользящие ТС-631
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-nepodvizhnye-homutovye-t3/"
                                         >
                                             Опоры неподвижные хомутовые Т3
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-nepodvizhnye-lobovye-2-h-upornye-t4/"
@@ -210,10 +189,9 @@ const Catalog = () => {
                                             Опоры неподвижные лобовые 2-х
                                             упорные Т4
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-nepodvizhnye-lobovaya-2-h-upornaya-ts-660/"
@@ -221,10 +199,9 @@ const Catalog = () => {
                                             Опоры неподвижные лобовая 2-х
                                             упорная ТС-660
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-nepodvizhnye-homutovye-korpusnaya-ts-670/"
@@ -232,22 +209,20 @@ const Catalog = () => {
                                             Опоры неподвижные хомутовые
                                             корпусные ТС-670
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opory-nepodvizhnye-homutovye-ts-659/"
                                         >
                                             Опоры неподвижные хомутовые ТС-659
                                         </a>
-                                        <ul></ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li className="menu-hidden category-menu">
+                            <li className="category-menu">
                                 <a
                                     href="/truby_i_opory_v_izoljatsii/"
                                     className="catalog-links"
@@ -255,8 +230,8 @@ const Catalog = () => {
                                     Трубы и опоры в изоляции
                                 </a>
 
-                                <div className="cat-left-drop-menu" hidden>
-                                    <div className="cat-left-drop-menu-left">
+                                <div className="hidden-menu">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/truba_v_ppu_izoljatsii_polietilenovaja_obolochka/"
@@ -264,10 +239,9 @@ const Catalog = () => {
                                             Труба в ППУ изоляции полиэтиленовая
                                             оболочка
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/truba_v_ppu_izoljatsii_otsinkovannaja_obolochka/"
@@ -275,20 +249,18 @@ const Catalog = () => {
                                             Труба в ППУ изоляции оцинкованная
                                             оболочка
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/truba_v_ppmi_izoljatsii/"
                                         >
                                             Труба в ППМИ изоляции
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opora_nepodvizhnaja_v_ppu_izoljatsii/"
@@ -314,19 +286,18 @@ const Catalog = () => {
                                         </ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/opora_skolzjaschaja_homutovaja_ppu/"
                                         >
                                             Опора скользящая хомутовая ППУ
                                         </a>
-                                        <ul></ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li className="menu-hidden category-menu">
+                            <li className="category-menu">
                                 <a
                                     href="/otvod_v_ppu_izoljatsii/"
                                     className="catalog-links"
@@ -334,8 +305,8 @@ const Catalog = () => {
                                     Отводы в изоляции
                                 </a>
 
-                                <div className="cat-left-drop-menu" hidden>
-                                    <div className="cat-left-drop-menu-left">
+                                <div className="hidden-menu">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_v_ppu_izoljatsii_polietilenovaja_obolochka/"
@@ -343,10 +314,9 @@ const Catalog = () => {
                                             Отвод в ППУ изоляции полиэтиленовая
                                             оболочка
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_v_ppu_izoljatsii_otsinkovannaja_obolochka/"
@@ -354,30 +324,27 @@ const Catalog = () => {
                                             Отвод в ППУ изоляции оцинкованная
                                             оболочка
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_v_ppu_izoljatsii_stekloplastik/"
                                         >
                                             Отвод в ППУ изоляции стеклопластик
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_v_ppu_izoljatsii_folga_armofol/"
                                         >
                                             Отвод в ППУ изоляции фольга Армофол
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_v_ppu_izoljatsii_folga_kashirovannaja/"
@@ -385,22 +352,20 @@ const Catalog = () => {
                                             Отвод в ППУ изоляции фольга
                                             кашированная
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/kozhuh_iz_otsinkovannoj_stali_na_otvod/"
                                         >
                                             Кожух из оцинкованной стали на отвод
                                         </a>
-                                        <ul></ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li className="menu-hidden category-menu">
+                            <li className="category-menu">
                                 <a
                                     href="/skorlupa_ppu/"
                                     className="catalog-links"
@@ -408,48 +373,44 @@ const Catalog = () => {
                                     Скорлупа ППУ
                                 </a>
 
-                                <div className="cat-left-drop-menu" hidden>
-                                    <div className="cat-left-drop-menu-left">
+                                <div className="hidden-menu">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/skorlupa_ppu_bez_pokrytija/"
                                         >
                                             Скорлупа ППУ без покрытия
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/skorlupa_ppu_stekloplastik/"
                                         >
                                             Скорлупа ППУ стеклопластик
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/skorlupa_ppu_folga_armofol/"
                                         >
                                             Скорлупа ППУ фольга Армофол
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/skorlupa_ppu_folga_kashirovannaja/"
                                         >
                                             Скорлупа ППУ фольга кашированная
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/kozhuh_iz_otsinkovannoj_stali_na_skorlupu/"
@@ -457,12 +418,11 @@ const Catalog = () => {
                                             Кожух из оцинкованной стали на
                                             скорлупу
                                         </a>
-                                        <ul></ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li className="menu-hidden category-menu">
+                            <li className="category-menu">
                                 <a
                                     href="/otvod_mineralovatnyj/"
                                     className="catalog-links"
@@ -470,18 +430,17 @@ const Catalog = () => {
                                     Отвод минераловатный
                                 </a>
 
-                                <div className="cat-left-drop-menu" hidden>
-                                    <div className="cat-left-drop-menu-left">
+                                <div className="hidden-menu">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_mineralovatnyj_bez_pokrytija/"
                                         >
                                             Отвод минераловатный без покрытия
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_mineralovatnyj_v_otsinkovannoj_obolochke/"
@@ -489,10 +448,9 @@ const Catalog = () => {
                                             Отвод минераловатный в оцинкованной
                                             оболочке
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_mineralovatnyj_kashirovannyj_folgoj/"
@@ -500,10 +458,9 @@ const Catalog = () => {
                                             Отвод минераловатный кашированный
                                             фольгой
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/otvod_mineralovatnyj_s_zaschitnym_pokrytiem_outside/"
@@ -511,12 +468,11 @@ const Catalog = () => {
                                             Отвод минераловатный с защитным
                                             покрытием Outside
                                         </a>
-                                        <ul></ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li className="menu-hidden category-menu">
+                            <li className="category-menu">
                                 <a
                                     href="/trojnik_mineralovatnyj/"
                                     className="catalog-links"
@@ -524,18 +480,17 @@ const Catalog = () => {
                                     Тройник минераловатный
                                 </a>
 
-                                <div className="cat-left-drop-menu" hidden>
-                                    <div className="cat-left-drop-menu-left">
+                                <div className="hidden-menu">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/trojnik_mineralovatnyj_bez_pokrytija/"
                                         >
                                             Тройник минераловатный без покрытия
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/trojnik_mineralovatnyj_v_otsinkovannoj_obolochke/"
@@ -543,10 +498,9 @@ const Catalog = () => {
                                             Тройник минераловатный в
                                             оцинкованной оболочке
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/trojnik_mineralovatnyj_kashirovannyj_folgoj/"
@@ -554,10 +508,9 @@ const Catalog = () => {
                                             Тройник минераловатный кашированный
                                             фольгой
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/trojnik_mineralovatnyj_s_zaschitnym_pokrytiem_outside/"
@@ -565,12 +518,11 @@ const Catalog = () => {
                                             Тройник минераловатный с защитным
                                             покрытием Outside
                                         </a>
-                                        <ul></ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li className="menu-hidden category-menu">
+                            <li className="category-menu">
                                 <a
                                     href="/tsilindr_mineralovatnyj/"
                                     className="catalog-links"
@@ -578,18 +530,17 @@ const Catalog = () => {
                                     Цилиндр минераловатный
                                 </a>
 
-                                <div className="cat-left-drop-menu" hidden>
-                                    <div className="cat-left-drop-menu-left">
+                                <div className="hidden-menu">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/tsilindr_mineralovatnyj_bez_pokrytija/"
                                         >
                                             Цилиндр минераловатный без покрытия
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/tsilindr_mineralovatnyj_v_otsinkovannoj_obolochke/"
@@ -597,10 +548,9 @@ const Catalog = () => {
                                             Цилиндр минераловатный в
                                             оцинкованной оболочке
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/tsilindr_mineralovatnyj_kashirovannyj_folgoj/"
@@ -608,10 +558,9 @@ const Catalog = () => {
                                             Цилиндр минераловатный кашированный
                                             фольгой
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/tsilindr_mineralovatnyj_s_zaschitnym_pokrytiem_outside/"
@@ -619,55 +568,50 @@ const Catalog = () => {
                                             Цилиндр минераловатный с защитным
                                             покрытием Outside
                                         </a>
-                                        <ul></ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li className="menu-hidden category-menu">
+                            <li className="category-menu">
                                 <a href="/truba-pnd/" className="catalog-links">
                                     Труба ПНД
                                 </a>
 
-                                <div className="cat-left-drop-menu" hidden>
-                                    <div className="cat-left-drop-menu-left">
+                                <div className="hidden-menu">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/truba-pnd-dlya-kanalizacii/"
                                         >
                                             Труба ПНД для канализации
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/truba-pnd-v-buhtah/"
                                         >
                                             Труба ПНД в бухтах
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/truba-pnd-dlya-gaza/"
                                         >
                                             Труба ПНД для газа
                                         </a>
-                                        <ul></ul>
                                     </div>
 
-                                    <div className="cat-left-drop-menu-left">
+                                    <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
                                             href="/truba-pnd-dlya-vody/"
                                         >
                                             Труба ПНД для воды
                                         </a>
-                                        <ul></ul>
                                     </div>
                                 </div>
                             </li>

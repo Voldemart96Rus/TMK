@@ -7,7 +7,7 @@ const NotFound = () => {
         <section className="container-lg content">
             <div className="row">
                 <Catalog />
-                <div class="col-md-9">
+                <div class="col col-md-7 col-lg-9">
                     <section class="delivery">
                         <h3 class="block__header">
                             Запрашиваемая Вами страница не существует!

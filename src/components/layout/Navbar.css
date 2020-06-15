@@ -23,3 +23,78 @@
     color: inherit;
     fill: currentColor;
 }
+
+.catalog-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .company-description {
+        display: none;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-inner {
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-inner {
+        color: #228ce2 !important;
+    }
+
+    .catalog-mobile {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        display: inline;
+        cursor: pointer;
+    }
+
+    .navbar-brand__logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: inline;
+        cursor: pointer;
+    }
+
+    .menu-mobile_visible {
+        display: flex;
+        background-color: aliceblue;
+        flex-direction: column;
+        text-align: center;
+        right: 0;
+        position: absolute;
+        width: 50px;
+        left: auto !important;
+    }
+
+    .dropdown-item {
+        padding: 0;
+        text-align: center;
+    }
+}

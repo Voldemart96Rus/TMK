@@ -1,14 +1,15 @@
 import React from 'react';
+
 import Carousel from 'react-bootstrap/Carousel';
 
 import Catalog from '../components/layout/Catalog';
 
 function Home() {
     return (
-        <section className="container-lg content">
+        <section className="content">
             <div className="row">
                 <Catalog />
-                <div className="col-md-9">
+                <div className="col col-md-7 col-lg-9">
                     <section className="about">
                         <h3 className="block__header">О компании</h3>
                         <Carousel>

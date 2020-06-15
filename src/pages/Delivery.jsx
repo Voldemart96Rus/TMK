@@ -7,7 +7,7 @@ const Delivery = () => {
         <section className="container-lg content">
             <div className="row">
                 <Catalog />
-                <div className="col-md-9">
+                <div className="col col-md-7 col-lg-9">
                     <section className="delivery">
                         <h3 className="block__header">Доставка</h3>
                         <p>

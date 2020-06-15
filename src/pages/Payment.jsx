@@ -8,7 +8,7 @@ const Payment = () => {
             <div className="row">
                 <Catalog />
 
-                <div className="col-md-9">
+                <div className="col col-md-7 col-lg-9">
                     <section className="payment">
                         <h3 className="block__header">Оплата</h3>
                         <p>

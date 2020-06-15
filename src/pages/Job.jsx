@@ -7,7 +7,7 @@ const Job = () => {
         <section className="container-lg content">
             <div className="row">
                 <Catalog />
-                <div className="col-md-9">
+                <div className="col col-md-7 col-lg-9">
                     <section className="block">
                         <h3 className="block__header">Вакансии</h3>
                         <h4>ППУ ТМК "Промышленная компания" требуется:</h4>

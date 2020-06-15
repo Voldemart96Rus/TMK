@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Catalog from '../components/layout/Catalog';
+import './Production.css';
 
 const Production = () => {
     return (
@@ -34,7 +35,7 @@ const Production = () => {
                                         </div>
                                         <img
                                             src="img/tmk-prod-md.jpg"
-                                            className="card-img-bottom"
+                                            className="card-img-bottom production-card__image"
                                             alt="Производство стальной трубы (ТМК)"
                                         />
                                     </div>
@@ -43,14 +44,15 @@ const Production = () => {
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title">
-                                                2. Производство полиэтиленовой
-                                                оболочки
+                                                2. Производство трубы в ППУ
+                                                изоляции
                                             </h5>
                                         </div>
                                         <img
-                                            src="img/tmk-prod-md.jpg"
-                                            className="card-img-bottom"
-                                            alt="Производство полиэтиленовой оболочки"
+                                            src="img/ppu-prod.00_jpg_srz"
+                                            className="card-img-bottom production-card__image"
+                                            alt="Производство трубы в ППУ
+                                            изоляции"
                                         />
                                     </div>
                                 </div>
@@ -58,14 +60,14 @@ const Production = () => {
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title">
-                                                3. Производство оцинкованной
-                                                оболочки
+                                                3. Производство трубы в
+                                                оцинкованной оболочке
                                             </h5>
                                         </div>
                                         <img
                                             src="img/zinc.jpe"
-                                            className="card-img-bottom"
-                                            alt="Производство оцинкованной оболочки"
+                                            className="card-img-bottom production-card__image of_contain"
+                                            alt="Производство трубы в оцинкованной оболочке"
                                         />
                                     </div>
                                 </div>
@@ -77,8 +79,8 @@ const Production = () => {
                                             </h5>
                                         </div>
                                         <img
-                                            src="img/tmk-prod-md.jpg"
-                                            className="card-img-bottom"
+                                            src="img/ppu-zinc-shaped.webp"
+                                            className="card-img-bottom production-card__image"
                                             alt="Производство фасонных изделий"
                                         />
                                     </div>

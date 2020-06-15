@@ -60,7 +60,8 @@ const Quality = () => {
                                         <div className="col-md-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">
-                                                    Производим ППУ изоляцию
+                                                    Производство трубы в ППУ
+                                                    изоляции
                                                 </h5>
                                                 <p className="card-text">
                                                     Ключевой показатель качества
@@ -106,8 +107,8 @@ const Quality = () => {
                                         <div className="col-md-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">
-                                                    Производим полиэтиленовую и
-                                                    оцинкованную оболочку
+                                                    Производство трубы в
+                                                    оцинкованной оболочке
                                                 </h5>
                                                 <div className="card-text">
                                                     Качество ОЦ оболочки зависит
@@ -158,8 +159,8 @@ const Quality = () => {
                                     <div className="row no-gutters">
                                         <div className="col-md-4">
                                             <img
-                                                src="img/shaped-products.jpg"
-                                                className="card-img"
+                                                src="img/ppu-zinc-shaped.webp"
+                                                className="card-img of_contain"
                                                 alt="Фасонные изделия
                                                 и опоры"
                                             />
@@ -188,7 +189,7 @@ const Quality = () => {
                                                     включения и трещины.
                                                 </p>
                                                 <p className="card-text">
-                                                    Производим не стандартные
+                                                    Производим нестандартные
                                                     изделия.
                                                 </p>
                                             </div>

@@ -6,7 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.0",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-route": "^1.0.3",
     "react-router-dom": "^5.2.0",
@@ -15,6 +17,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "heroku:login": "heroku login",
+    "heroku:create": "heroku create tmk-factory -b https://github.com/mars/create-react-app-buildpack.git",
+    "heroku": "git push heroku master",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

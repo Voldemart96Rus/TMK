@@ -83,7 +83,8 @@ const Footer = () => {
             <div className="hr-top">
                 <div className="container">
                     <div className="copyright py-4">
-                        © 2020 Все права защищены.
+                        © 2020 ППУ ТМК&laquo;Промышленная компания&raquo; Все
+                        права защищены.
                     </div>
                 </div>
             </div>

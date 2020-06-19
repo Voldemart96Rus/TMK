@@ -79,7 +79,7 @@ const Production = () => {
                                             </h5>
                                         </div>
                                         <img
-                                            src="img/ppu-zinc-shaped.webp"
+                                            src="img/catalog/Отводы В Изоляции/ppu-zinc-shaped.png"
                                             className="card-img-bottom production-card__image"
                                             alt="Производство фасонных изделий"
                                         />

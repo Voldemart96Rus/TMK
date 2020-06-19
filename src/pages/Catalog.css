@@ -1,4 +1,11 @@
-.production-card__image {
-    height: 300px;
-    object-fit: cover;
+.card {
+    overflow: hidden;
+}
+
+.catalog-category {
+    text-align: center;
+}
+
+.catalog-category__img {
+    object-fit: contain;
 }

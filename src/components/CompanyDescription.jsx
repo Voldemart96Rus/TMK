@@ -1,12 +1,11 @@
 import React from 'react';
-import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 
 const CompanyDescription = () => {
     return (
-        <article className="company-description">
-            <CardGroup>
-                <Card className="text-center">
+        <article className="container">
+            <div className="row">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/favicon.svg"
@@ -24,7 +23,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/img/factory-light.svg"
@@ -40,7 +39,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/img/buildings.svg"
@@ -56,9 +55,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-            </CardGroup>
-            <CardGroup>
-                <Card className="text-center">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/img/down.svg"
@@ -75,7 +72,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/img/certificate.svg"
@@ -91,7 +88,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/img/hand.svg"
@@ -108,9 +105,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-            </CardGroup>
-            <CardGroup>
-                <Card className="text-center">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/img/wheels-truck.svg"
@@ -125,7 +120,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/img/increase.svg"
@@ -142,7 +137,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center">
+                <Card className="text-center col-12 col-lg-6 col-xl-4">
                     <Card.Img
                         variant="top"
                         src="/img/pipes.svg"
@@ -159,7 +154,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-            </CardGroup>
+            </div>
             <div className="company-description__contacts">
                 <a
                     href="tel:"

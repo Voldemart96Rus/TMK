@@ -89,13 +89,21 @@ h5 {
     object-fit: cover;
 }
 
-.carousel-control-prev:hover, .carousel-control-next:hover {
+.about .carousel-control-prev, .about .carousel-control-next {
+    height: calc(100% - 3rem);
+}
+
+.about .carousel-control-prev:hover, .about .carousel-control-next:hover {
     background: #00000068;
 }
 
-.carousel__small-image {
-    width: 300px;
+.carousel__image_sm {
     margin: 0 auto;
+    object-fit: contain;
+}
+
+.about .carousel-inner {
+    padding-bottom: 3rem;
 }
 
 /* Home */

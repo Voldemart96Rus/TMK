@@ -12,7 +12,7 @@ const Category = ({categoryItems, category}) => {
     return (
         <section className="container-lg content">
             <div className="row">
-                <CatalogAside />
+                <CatalogAside isActive={category} />
                 <div className="col col-md-7 col-lg-9">
                     <h3 className="block__header">{items.title}</h3>
                     <div className="row">

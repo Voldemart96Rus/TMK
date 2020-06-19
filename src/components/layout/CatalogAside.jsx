@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {Link} from 'react-router-dom';
+
 import './CatalogAside.css';
 
 const CatalogAside = () => {
@@ -8,14 +10,19 @@ const CatalogAside = () => {
             <div className="left-category-menu hidden-sm hidden-xs">
                 <div className="left-product-cat">
                     <div className="category-heading">
-                        <h2 className="catalog-description">Каталог</h2>
+                        <Link to="/catalog">
+                            <h2 className="catalog-description">Каталог</h2>
+                        </Link>
                     </div>
                     <div className="category-menu-list">
                         <ul className="catalog">
                             <li className="category-menu">
-                                <a href="#!" className="catalog-links">
+                                <Link
+                                    to="/category/Opory_truboprovodov"
+                                    className="catalog-links"
+                                >
                                     Опоры трубопроводов
-                                </a>
+                                </Link>
 
                                 <div className="hidden-menu">
                                     <div className="hidden-menu-item col-md-3 col-12">
@@ -223,12 +230,12 @@ const CatalogAside = () => {
                             </li>
 
                             <li className="category-menu">
-                                <a
-                                    href="/truby_i_opory_v_izoljatsii/"
+                                <Link
+                                    to="/category/Truby_i_opory_v_izolyatsii"
                                     className="catalog-links"
                                 >
                                     Трубы и опоры в изоляции
-                                </a>
+                                </Link>
 
                                 <div className="hidden-menu">
                                     <div className="hidden-menu-item col-md-3 col-12">
@@ -263,27 +270,21 @@ const CatalogAside = () => {
                                     <div className="hidden-menu-item col-md-3 col-12">
                                         <a
                                             className="menu-item-heading"
-                                            href="/opora_nepodvizhnaja_v_ppu_izoljatsii/"
+                                            href="/truba_v_ppmi_izoljatsii/"
                                         >
                                             Опора неподвижная в ППУ изоляции
+                                            полиэтиленовая оболочка
                                         </a>
-                                        <ul>
-                                            <li>
-                                                <a href="/opora_nepodvizhnaja_v_ppu_izoljatsii_polietilenovaja_obolochka/">
-                                                    Опора неподвижная в ППУ
-                                                    изоляции полиэтиленовая
-                                                    оболочка
-                                                </a>
-                                            </li>
+                                    </div>
 
-                                            <li>
-                                                <a href="/opora_nepodvizhnaja_v_ppu_izoljatsii_otsinkovannaja_obolochka/">
-                                                    Опора неподвижная в ППУ
-                                                    изоляции оцинкованная
-                                                    оболочка
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    <div className="hidden-menu-item col-md-3 col-12">
+                                        <a
+                                            className="menu-item-heading"
+                                            href="/truba_v_ppmi_izoljatsii/"
+                                        >
+                                            Опора неподвижная в ППУ изоляции
+                                            оцинкованная оболочка
+                                        </a>
                                     </div>
 
                                     <div className="hidden-menu-item col-md-3 col-12">
@@ -298,12 +299,12 @@ const CatalogAside = () => {
                             </li>
 
                             <li className="category-menu">
-                                <a
-                                    href="/otvod_v_ppu_izoljatsii/"
+                                <Link
+                                    to="/category/Otvody_v_izolyatsii"
                                     className="catalog-links"
                                 >
                                     Отводы в изоляции
-                                </a>
+                                </Link>
 
                                 <div className="hidden-menu">
                                     <div className="hidden-menu-item col-md-3 col-12">
@@ -366,12 +367,12 @@ const CatalogAside = () => {
                             </li>
 
                             <li className="category-menu">
-                                <a
-                                    href="/skorlupa_ppu/"
+                                <Link
+                                    to="/category/skorlupa_ppu"
                                     className="catalog-links"
                                 >
                                     Скорлупа ППУ
-                                </a>
+                                </Link>
 
                                 <div className="hidden-menu">
                                     <div className="hidden-menu-item col-md-3 col-12">
@@ -423,12 +424,12 @@ const CatalogAside = () => {
                             </li>
 
                             <li className="category-menu">
-                                <a
-                                    href="/otvod_mineralovatnyj/"
+                                <Link
+                                    to="/category/Otvod_mineralovatnyy"
                                     className="catalog-links"
                                 >
                                     Отвод минераловатный
-                                </a>
+                                </Link>
 
                                 <div className="hidden-menu">
                                     <div className="hidden-menu-item col-md-3 col-12">
@@ -473,12 +474,12 @@ const CatalogAside = () => {
                             </li>
 
                             <li className="category-menu">
-                                <a
-                                    href="/trojnik_mineralovatnyj/"
+                                <Link
+                                    to="/category/Troynik_mineralovatnyy"
                                     className="catalog-links"
                                 >
                                     Тройник минераловатный
-                                </a>
+                                </Link>
 
                                 <div className="hidden-menu">
                                     <div className="hidden-menu-item col-md-3 col-12">
@@ -523,12 +524,12 @@ const CatalogAside = () => {
                             </li>
 
                             <li className="category-menu">
-                                <a
-                                    href="/tsilindr_mineralovatnyj/"
+                                <Link
+                                    to="/tsilindr_mineralovatnyj/"
                                     className="catalog-links"
                                 >
                                     Цилиндр минераловатный
-                                </a>
+                                </Link>
 
                                 <div className="hidden-menu">
                                     <div className="hidden-menu-item col-md-3 col-12">
@@ -573,9 +574,12 @@ const CatalogAside = () => {
                             </li>
 
                             <li className="category-menu">
-                                <a href="/truba-pnd/" className="catalog-links">
+                                <Link
+                                    to="/category/Truba_PND"
+                                    className="catalog-links"
+                                >
                                     Труба ПНД
-                                </a>
+                                </Link>
 
                                 <div className="hidden-menu">
                                     <div className="hidden-menu-item col-md-3 col-12">

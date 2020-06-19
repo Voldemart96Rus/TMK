@@ -159,7 +159,7 @@ const Quality = () => {
                                     <div className="row no-gutters">
                                         <div className="col-md-4">
                                             <img
-                                                src="img/ppu-zinc-shaped.webp"
+                                                src="img/catalog/Отводы В Изоляции/ppu-zinc-shaped.png"
                                                 className="card-img of_contain"
                                                 alt="Фасонные изделия
                                                 и опоры"

@@ -12,8 +12,11 @@ import Payment from '../pages/Payment';
 import Production from '../pages/Production';
 import Quality from '../pages/Quality';
 import Catalog from '../pages/Catalog';
+import Category from '../pages/Category';
 
 import NotFound from '../pages/NotFound';
+
+import initialState from './initialState';
 
 import './App.css';
 
@@ -30,7 +33,27 @@ function App() {
                     <Route exact path="/production" component={Production} />
                     <Route exact path="/quality" component={Quality} />
                     <Route exact path="/job" component={Job} />
-                    <Route exact path="/catalog" component={Catalog} />
+                    <Route
+                        exact
+                        path="/catalog"
+                        render={(props) => (
+                            <Catalog
+                                {...props}
+                                category={initialState.category}
+                            />
+                        )}
+                    />
+                    <Route
+                        exact
+                        path="/category/:category"
+                        render={(props) => (
+                            <Category
+                                {...props}
+                                categoryItems={initialState.categoryItems}
+                                category={props.match.params.category}
+                            />
+                        )}
+                    />
                     <Route component={NotFound} />
                 </Switch>
             </div>

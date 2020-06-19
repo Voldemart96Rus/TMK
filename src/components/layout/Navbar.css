@@ -58,6 +58,7 @@
 
     .company-description {
         display: inline;
+        font-size: 0.8rem;
     }
 
     .navbar-inner {

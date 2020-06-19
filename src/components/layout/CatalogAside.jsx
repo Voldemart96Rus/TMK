@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 import './CatalogAside.css';
 
-const CatalogAside = () => {
+const CatalogAside = ({isActive}) => {
     return (
         <div className="col-5 col-lg-3 catalog-wrapper">
             <div className="left-category-menu hidden-sm hidden-xs">
@@ -16,7 +16,13 @@ const CatalogAside = () => {
                     </div>
                     <div className="category-menu-list">
                         <ul className="catalog">
-                            <li className="category-menu">
+                            <li
+                                className={
+                                    isActive === 'Opory_truboprovodov'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
                                 <Link
                                     to="/category/Opory_truboprovodov"
                                     className="catalog-links"
@@ -229,7 +235,13 @@ const CatalogAside = () => {
                                 </div>
                             </li>
 
-                            <li className="category-menu">
+                            <li
+                                className={
+                                    isActive === 'Truby_i_opory_v_izolyatsii'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
                                 <Link
                                     to="/category/Truby_i_opory_v_izolyatsii"
                                     className="catalog-links"
@@ -298,7 +310,13 @@ const CatalogAside = () => {
                                 </div>
                             </li>
 
-                            <li className="category-menu">
+                            <li
+                                className={
+                                    isActive === 'Otvody_v_izolyatsii'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
                                 <Link
                                     to="/category/Otvody_v_izolyatsii"
                                     className="catalog-links"
@@ -366,7 +384,13 @@ const CatalogAside = () => {
                                 </div>
                             </li>
 
-                            <li className="category-menu">
+                            <li
+                                className={
+                                    isActive === 'skorlupa_ppu'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
                                 <Link
                                     to="/category/skorlupa_ppu"
                                     className="catalog-links"
@@ -423,7 +447,13 @@ const CatalogAside = () => {
                                 </div>
                             </li>
 
-                            <li className="category-menu">
+                            <li
+                                className={
+                                    isActive === 'Otvod_mineralovatnyy'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
                                 <Link
                                     to="/category/Otvod_mineralovatnyy"
                                     className="catalog-links"
@@ -473,7 +503,13 @@ const CatalogAside = () => {
                                 </div>
                             </li>
 
-                            <li className="category-menu">
+                            <li
+                                className={
+                                    isActive === 'Troynik_mineralovatnyy'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
                                 <Link
                                     to="/category/Troynik_mineralovatnyy"
                                     className="catalog-links"
@@ -523,9 +559,15 @@ const CatalogAside = () => {
                                 </div>
                             </li>
 
-                            <li className="category-menu">
+                            <li
+                                className={
+                                    isActive === 'Tsilindr_mineralovatnyy'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
                                 <Link
-                                    to="/tsilindr_mineralovatnyj/"
+                                    to="/category/Tsilindr_mineralovatnyy"
                                     className="catalog-links"
                                 >
                                     Цилиндр минераловатный
@@ -573,7 +615,13 @@ const CatalogAside = () => {
                                 </div>
                             </li>
 
-                            <li className="category-menu">
+                            <li
+                                className={
+                                    isActive === 'Truba_PND'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
                                 <Link
                                     to="/category/Truba_PND"
                                     className="catalog-links"

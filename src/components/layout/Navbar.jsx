@@ -19,7 +19,7 @@ const Navbar = ({history}) => {
                         src="/favicon.svg"
                         alt="Лого"
                     />
-                    <div className="company-description">
+                    <div className="header__company-description">
                         ППУ ТМК
                         <br />
                         &laquo;Промышленная компания&raquo;

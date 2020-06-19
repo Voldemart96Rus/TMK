@@ -24,11 +24,7 @@
     border-bottom: none;
 } */
 
-<<<<<<< HEAD
-.category-menu:hover+.category-menu {
-=======
 /* .category-menu:hover + .category-menu {
->>>>>>> 76a7ed6a05af268981a36e325592dfb8ba299a02
     border-top-color: var(--main-color);
 } */
 
@@ -78,66 +74,57 @@
     text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-.category-menu:hover>div {
+<<<<<<< HEAD .category-menu:hover>div {
     display: flex;
-=======
-.category-menu:hover > div {
-    /* display: flex;
+    =======.category-menu:hover>div {
+        /* display: flex;
 >>>>>>> 76a7ed6a05af268981a36e325592dfb8ba299a02
     flex-wrap: wrap;
     z-index: 99;
     left: 247px;
     top: 0; */
-}
-
-.category-menu>div {
-    display: none;
-}
-
-.hidden-menu {
-    position: absolute;
-    background: rgba(255, 255, 255, 0);
-    width: 920px;
-    height: auto;
-}
-
-.hidden-menu-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid #d3d3d3;
-    background: #fff;
-    height: 100px;
-    width: 200px;
-}
-
-.menu-item-heading {
-    padding: 3px 3px;
-}
-
-@media screen and (max-width: 1200px) {
-    .category-menu:hover>div {
-        left: 210px;
-        top: 0;
+    }
+    .category-menu>div {
+        display: none;
     }
     .hidden-menu {
-        width: 720px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0);
+        width: 920px;
+        height: auto;
+    }
+    .hidden-menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #d3d3d3;
+        background: #fff;
+        height: 100px;
+        width: 200px;
     }
     .menu-item-heading {
-        font-size: 0.9rem;
+        padding: 3px 3px;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .catalog-wrapper {
-        display: none;
+    @media screen and (max-width: 1200px) {
+        .category-menu:hover>div {
+            left: 210px;
+            top: 0;
+        }
+        .hidden-menu {
+            width: 720px;
+        }
+        .menu-item-heading {
+            font-size: 0.9rem;
+        }
     }
-}
-
-@media screen and (max-width: 767px) {
-    .category-heading {
-        display: none;
+    @media screen and (max-width: 767px) {
+        .catalog-wrapper {
+            display: none;
+        }
     }
-}
+    @media screen and (max-width: 767px) {
+        .category-heading {
+            display: none;
+        }
+    }

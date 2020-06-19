@@ -25,12 +25,9 @@
 
 .category-menu:hover {
     position: relative;
-    /* background-color: #1b1b6f50; */
     background: var(--main-color-opaque);
     border-color: var(--main-color);
     color: var(--main-color-dark);
-    /* box-shadow: 2px 0px 7px 0px rgba(50, 50, 50, 0.75); */
-    /* box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75); */
 }
 
 .category-menu::after {
@@ -66,11 +63,11 @@
 }
 
 .category-menu:hover > div {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     z-index: 99;
     left: 247px;
-    top: 0;
+    top: 0; */
 }
 
 .category-menu > div {

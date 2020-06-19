@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .company-description {
+    .header__company-description {
         display: none;
     }
     .navbar-nav {
@@ -56,7 +56,7 @@
         display: none;
     }
 
-    .company-description {
+    .header__company-description {
         display: inline;
         font-size: 0.8rem;
     }

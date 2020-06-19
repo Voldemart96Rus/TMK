@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './Footer.css';
 
@@ -13,57 +14,62 @@ const Footer = () => {
                         </div>
                         <ul className="footer__nav">
                             <li className="nav-item">
-                                <a className="footer__nav-link" href="/">
+                                <Link className="footer__nav-link" to="/">
                                     О компании
-                                </a>
+                                </Link>
+                            </li>
+                            <li className="nav-item nav-item__catalog">
+                                <Link
+                                    className="footer__nav-link"
+                                    to="/catalog"
+                                >
+                                    Каталог
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="footer__nav-link"
-                                    href="/delivery.html"
+                                    to="/delivery"
                                 >
                                     Доставка
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="footer__nav-link"
-                                    href="/payment.html"
+                                    to="/payment"
                                 >
                                     Оплата
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    className="footer__nav-link"
-                                    href="/job.html"
-                                >
+                                <Link className="footer__nav-link" to="/job">
                                     Вакансии
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="footer__nav-link"
-                                    href="/quality.html"
+                                    to="/quality"
                                 >
                                     Качество
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="footer__nav-link"
-                                    href="/production.html"
+                                    to="/production"
                                 >
                                     Производство
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="footer__nav-link"
-                                    href="/contacts.html"
+                                    to="/contacts"
                                 >
                                     Контакты
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Catalog from '../components/layout/Catalog';
+import CatalogAside from '../components/layout/CatalogAside';
 
 const Delivery = () => {
     return (
         <section className="container-lg content">
             <div className="row">
-                <Catalog />
+                <CatalogAside />
                 <div className="col col-md-7 col-lg-9">
                     <section className="delivery">
                         <h3 className="block__header">Доставка</h3>
@@ -19,7 +19,7 @@ const Delivery = () => {
                         </p>
                         <p>
                             <span className="font-weight-bold">
-                                До терминала транспортной компании
+                                До терминала транспортной компании{' '}
                             </span>
                             - Бесплатно.
                         </p>
@@ -27,14 +27,14 @@ const Delivery = () => {
                             Доставляем продукцию по
                             <span className="font-weight-bold">
                                 {' '}
-                                Екатеринбургу
+                                Екатеринбургу{' '}
                             </span>
                             в короткие сроки. Доставка изоляционных материалов,
                             труб и комплектующих в изоляции осуществляется
                             ежедневно в том числе в выходные и праздничные дни.
                         </p>
                         <p>
-                            Средний срок доставки трубы на объекты за
+                            Средний срок доставки трубы на объекты за{' '}
                             <span className="font-weight-bold">2 дня</span>.
                         </p>
                         <p>

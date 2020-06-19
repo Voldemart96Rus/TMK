@@ -68,7 +68,7 @@
 .category-menu:hover > div {
     display: flex;
     flex-wrap: wrap;
-    z-index: 999;
+    z-index: 99;
     left: 247px;
     top: 0;
 }
@@ -99,13 +99,24 @@
     padding: 3px 3px;
 }
 
+@media screen and (max-width: 1200px) {
+    .category-menu:hover > div {
+        left: 210px;
+        top: 0;
+    }
+
+    .hidden-menu {
+        width: 720px;
+    }
+
+    .menu-item-heading {
+        font-size: 0.9rem;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .catalog-wrapper {
         display: none;
-    }
-    .navbar-inner {
-        margin: 0 !important;
-        width: 100vw;
     }
 }
 

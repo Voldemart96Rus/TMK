@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Catalog from '../components/layout/Catalog';
+import CatalogAside from '../components/layout/CatalogAside';
 
 const NotFound = () => {
     return (
         <section className="container-lg content">
             <div className="row">
-                <Catalog />
+                <CatalogAside />
                 <div class="col col-md-7 col-lg-9">
                     <section class="delivery">
                         <h3 class="block__header">

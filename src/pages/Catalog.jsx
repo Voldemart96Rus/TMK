@@ -4,14 +4,12 @@ import './Catalog.css';
 
 const Catalog = () => {
     return (
-        <div className="col-5 col-lg-3 catalog-wrapper">
-            <div className="left-category-menu hidden-sm hidden-xs">
-                <div className="left-product-cat">
-                    <div className="category-heading">
-                        <h2 className="catalog-description">Каталог</h2>
-                    </div>
-                    <div className="category-menu-list">
-                        <ul className="catalog">
+        <section className="container-lg content">
+            <div className="row">
+                <div className="col col-md-7 col-lg-9">
+                    <section className="">
+                        <h3 className="block__header">Каталог</h3>
+                        <ul className="catalog-mobile">
                             <li className="category-menu">
                                 <a href="#!" className="catalog-links">
                                     Опоры трубопроводов
@@ -616,10 +614,10 @@ const Catalog = () => {
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </section>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

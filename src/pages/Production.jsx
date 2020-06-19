@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Catalog from '../components/layout/Catalog';
+import CatalogAside from '../components/layout/CatalogAside';
 import './Production.css';
 
 const Production = () => {
     return (
         <section className="container-lg content">
             <div className="row">
-                <Catalog />
+                <CatalogAside />
                 <div className="col col-md-7 col-lg-9">
                     <section className="delivery">
                         <h3 className="block__header">Производство</h3>

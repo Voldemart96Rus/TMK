@@ -1,6 +1,6 @@
 .navbar {
     top: 0;
-    z-index: 1;
+    z-index: 999;
     position: fixed;
     width: 100%;
     opacity: 0.9;
@@ -32,6 +32,10 @@
     display: none;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .company-description {
         display: none;
@@ -50,6 +54,10 @@
 @media screen and (max-width: 767px) {
     .navbar-nav {
         display: none;
+    }
+
+    .company-description {
+        display: inline;
     }
 
     .navbar-inner {
@@ -94,7 +102,12 @@
     }
 
     .dropdown-item {
-        padding: 0;
+        padding: 10px;
+        font-size: 1.2rem;
         text-align: center;
+    }
+
+    .nav-mobile {
+        display: inline;
     }
 }

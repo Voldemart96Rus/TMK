@@ -11,6 +11,7 @@ import Job from '../pages/Job';
 import Payment from '../pages/Payment';
 import Production from '../pages/Production';
 import Quality from '../pages/Quality';
+import Catalog from '../pages/Catalog';
 
 import NotFound from '../pages/NotFound';
 
@@ -29,6 +30,7 @@ function App() {
                     <Route exact path="/production" component={Production} />
                     <Route exact path="/quality" component={Quality} />
                     <Route exact path="/job" component={Job} />
+                    <Route exact path="/catalog" component={Catalog} />
                     <Route component={NotFound} />
                 </Switch>
             </div>

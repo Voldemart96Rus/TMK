@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Catalog from '../components/layout/Catalog';
+import CatalogAside from '../components/layout/CatalogAside';
 
 const Contacts = () => {
     return (
         <section className="container-lg content">
             <div className="row">
-                <Catalog />
-                <div class="col col-md-7 col-lg-9">
-                    <section class="delivery">
-                        <h3 class="block__header">Контакты</h3>
+                <CatalogAside />
+                <div className="col col-md-7 col-lg-9">
+                    <section className="delivery">
+                        <h3 className="block__header">Контакты</h3>
                     </section>
                 </div>
             </div>

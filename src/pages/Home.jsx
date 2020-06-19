@@ -2,13 +2,13 @@ import React from 'react';
 
 import Carousel from 'react-bootstrap/Carousel';
 
-import Catalog from '../components/layout/Catalog';
+import CatalogAside from '../components/layout/CatalogAside';
 
 function Home() {
     return (
         <section className="content">
             <div className="row">
-                <Catalog />
+                <CatalogAside />
                 <div className="col col-md-7 col-lg-9">
                     <section className="about">
                         <h3 className="block__header">О компании</h3>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Catalog from '../components/layout/Catalog';
+import CatalogAside from '../components/layout/CatalogAside';
 
 const Job = () => {
     return (
         <section className="container-lg content">
             <div className="row">
-                <Catalog />
+                <CatalogAside />
                 <div className="col col-md-7 col-lg-9">
                     <section className="block">
                         <h3 className="block__header">Вакансии</h3>

@@ -1,18 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
+import {DropdownButton, Dropdown} from 'react-bootstrap';
 
 import './Navbar.css';
 
-const Navbar = () => {
-    const [currentURL, setCurrentURL] = useState(window.location.pathname);
+const Navbar = ({history}) => {
+    const [currentURL, setCurrentURL] = useState(history.location.pathname);
     useEffect(() => {
-        setCurrentURL(window.location.pathname);
-    }, []);
-    const onclickMenu = (ev) => {
-        ev.preventDefault();
-        const menu = document.querySelector('.dropdown-menu');
-        menu.classList.toggle('menu-mobile_visible');
-    };
+        setCurrentURL(history.location.pathname);
+    }, [history.location.pathname]);
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,105 +25,95 @@ const Navbar = () => {
                         &laquo;Промышленная компания&raquo;
                     </div>
                 </Link>
-                <h2 className="catalog-mobile">Каталог</h2>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    role="img"
-                    focusable="false"
-                    className="menu-mobile"
-                    onClick={onclickMenu}
+
+                <DropdownButton
+                    alignRight
+                    title="Меню"
+                    id="dropdown-menu-align-right"
+                    className="nav-mobile"
                 >
-                    <title>Меню</title>
-                    <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeMiterlimit="10"
-                        strokeWidth="2"
-                        d="M4 7h22M4 15h22M4 23h22"
-                    ></path>
-                </svg>
-                <ul className="dropdown-menu nav-mobile">
-                    <li
+                    <Dropdown.Item
+                        href="/"
                         className={
                             currentURL === '/'
-                                ? 'dropdown-item active'
+                                ? 'active dropdown-item'
                                 : 'dropdown-item'
                         }
                     >
-                        <Link className="nav-link" to="/">
-                            О&nbsp;компании
-                        </Link>
-                    </li>
-                    <li
+                        О&nbsp;компании
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        href="/catalog"
+                        className={
+                            currentURL === '/catalog'
+                                ? 'active dropdown-item'
+                                : 'dropdown-item'
+                        }
+                    >
+                        Каталог
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        href="/delivery"
                         className={
                             currentURL === '/delivery'
-                                ? 'dropdown-item active'
+                                ? 'active dropdown-item'
                                 : 'dropdown-item'
                         }
                     >
-                        <Link className="nav-link" to="/delivery">
-                            Доставка
-                        </Link>
-                    </li>
-                    <li
+                        Доставка
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        href="/payment"
                         className={
                             currentURL === '/payment'
-                                ? 'dropdown-item active'
+                                ? 'active dropdown-item'
                                 : 'dropdown-item'
                         }
                     >
-                        <Link className="nav-link" to="/payment">
-                            Оплата
-                        </Link>
-                    </li>
-                    <li
+                        Оплата
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        href="/job"
                         className={
                             currentURL === '/job'
-                                ? 'dropdown-item active'
+                                ? 'active dropdown-item'
                                 : 'dropdown-item'
                         }
                     >
-                        <Link className="nav-link" to="/job">
-                            Вакансии
-                        </Link>
-                    </li>
-                    <li
+                        Вакансии
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        href="/quality"
                         className={
                             currentURL === '/quality'
-                                ? 'dropdown-item active'
+                                ? 'active dropdown-item'
                                 : 'dropdown-item'
                         }
                     >
-                        <Link className="nav-link" to="/quality">
-                            Качество
-                        </Link>
-                    </li>
-                    <li
+                        Качество
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        href="/production"
                         className={
                             currentURL === '/production'
-                                ? 'nav-item active'
-                                : 'nav-item'
+                                ? 'active dropdown-item'
+                                : 'dropdown-item'
                         }
                     >
-                        <Link className="nav-link" to="/production">
-                            Производство
-                        </Link>
-                    </li>
-                    <li
+                        Производство
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        href="/contacts"
                         className={
                             currentURL === '/contacts'
-                                ? 'nav-item active'
-                                : 'nav-item'
+                                ? 'active dropdown-item'
+                                : 'dropdown-item'
                         }
                     >
-                        <Link className="nav-link" to="/contacts">
-                            Контакты
-                        </Link>
-                    </li>
-                </ul>
+                        Контакты
+                    </Dropdown.Item>
+                </DropdownButton>
+
                 <ul className="navbar-nav">
                     <li
                         className={
@@ -210,4 +196,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default withRouter(Navbar);

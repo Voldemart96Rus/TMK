@@ -4,8 +4,13 @@
 
 .catalog-category {
     text-align: center;
+    margin: 0;
 }
 
 .catalog-category__img {
     object-fit: contain;
+}
+
+.card-body {
+    height: 78px;
 }

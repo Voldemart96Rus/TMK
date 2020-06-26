@@ -6,29 +6,31 @@ import CatalogAside from '../components/layout/CatalogAside';
 
 import './Category.css';
 
-const Category = ({categoryItems, category}) => {
-    const items = categoryItems[category];
+const Category = ({categoryItems, items, category}) => {
+    const listItems = categoryItems[category].items;
 
     return (
         <section className="container-lg content">
             <div className="row">
                 <CatalogAside isActive={category} />
                 <div className="col col-md-7 col-lg-9">
-                    <h3 className="block__header">{items.title}</h3>
+                    <h3 className="block__header">
+                        {categoryItems[category].title}
+                    </h3>
                     <div className="row">
-                        {items.items.map((item, i) => (
+                        {listItems.map((item, i) => (
                             <div className="col-md-4 p-2" key={i}>
-                                <Link to="#!">
+                                <Link to={items[item].URL}>
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title catalog-category">
-                                                {item.title}
+                                                {items[item].title}
                                             </h5>
                                         </div>
                                         <img
-                                            src={item.img}
+                                            src={items[item].img}
                                             className="card-img-bottom production-card__image catalog-category__img"
-                                            alt={item.title}
+                                            alt={items[item].title}
                                         />
                                     </div>
                                 </Link>

@@ -13,6 +13,7 @@ import Production from '../pages/Production';
 import Quality from '../pages/Quality';
 import Catalog from '../pages/Catalog';
 import Category from '../pages/Category';
+import Product from '../pages/Product';
 
 import NotFound from '../pages/NotFound';
 
@@ -50,7 +51,19 @@ function App() {
                             <Category
                                 {...props}
                                 categoryItems={initialState.categoryItems}
+                                items={initialState.items}
                                 category={props.match.params.category}
+                            />
+                        )}
+                    />
+                    <Route
+                        exact
+                        path="/product/:item"
+                        render={(props) => (
+                            <Product
+                                {...props}
+                                items={initialState.items}
+                                item={props.match.params.item}
                             />
                         )}
                     />

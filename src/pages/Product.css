@@ -4,6 +4,7 @@
     object-fit: contain;
     margin-right: 10px;
 }
+
 .product-wrapper {
     margin-top: 20px;
 }
@@ -12,4 +13,9 @@
     display: flex;
     flex-direction: column;
     width: 500px;
+}
+
+.order-from__submit-button {
+    display: block;
+    margin-left: auto;
 }

@@ -105,9 +105,11 @@ h5 {
     background: #00000068;
 }
 
-.carousel__image_sm {
-    margin: 0 auto;
-    object-fit: contain;
+@media (min-width: 768px) {
+    .carousel__image_sm {
+        margin: 0 auto;
+        object-fit: contain;
+    }
 }
 
 .about .carousel-inner {
@@ -127,15 +129,11 @@ h5 {
 
 .company-description__contact {
     background-color: var(--main-color);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
+    width: fit-content;
 }
 
-.company-description__contact:hover {
-    color: #fff;
+.company-description__card {
+    border-radius: 0;
 }
 
 .icon {

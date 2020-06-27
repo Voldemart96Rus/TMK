@@ -11,6 +11,6 @@
     object-fit: contain;
 }
 
-.card-body {
+.catalog__card-body {
     height: 78px;
 }

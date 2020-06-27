@@ -12,7 +12,7 @@ const Catalog = ({category}) => {
                     <div className="col-md-4 p-2" key={item.id}>
                         <Link to={item.URL}>
                             <div className="card">
-                                <div className="card-body">
+                                <div className="catalog__card-body card-body">
                                     <h5 className="card-title catalog-category">
                                         {item.title}
                                     </h5>

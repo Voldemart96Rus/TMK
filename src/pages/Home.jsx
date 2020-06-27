@@ -15,11 +15,17 @@ function Home() {
                         <h3 className="block__header">О компании</h3>
                         <Carousel>
                             <Carousel.Item>
-                                <img
-                                    className="d-block w-100 carousel__image carousel__image_sm"
-                                    src="/img/carousel-1.png"
-                                    alt=""
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="/img/carousel-1-mobile.jpg"
+                                    />
+                                    <img
+                                        className="d-block w-100 carousel__image carousel__image_sm"
+                                        src="/img/carousel-1.png"
+                                        alt=""
+                                    />
+                                </picture>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img

@@ -5,7 +5,7 @@ const CompanyDescription = () => {
     return (
         <article className="container">
             <div className="row">
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
                     <Card.Img
                         variant="top"
                         src="/favicon.svg"
@@ -14,8 +14,7 @@ const CompanyDescription = () => {
                     <Card.Body>
                         <Card.Title>О нас</Card.Title>
                         <Card.Text>
-                            ППУ ТМК «Промышленная «Компания» специализируется на
-                            производстве и поставке{' '}
+                            ППУ ТМК специализируется на производстве и поставке{' '}
                             <span className="text_main-color">
                                 труб ППУ и фасонных изделий
                             </span>{' '}
@@ -23,7 +22,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
                     <Card.Img
                         variant="top"
                         src="/img/factory-light.svg"
@@ -39,7 +38,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
                     <Card.Img
                         variant="top"
                         src="/img/buildings.svg"
@@ -55,24 +54,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
-                    <Card.Img
-                        variant="top"
-                        src="/img/down.svg"
-                        className="company-description__image p-2"
-                    />
-                    <Card.Body>
-                        <Card.Title>Скидки и бонусы</Card.Title>
-                        <Card.Text>
-                            Существует гибкая система{' '}
-                            <span className="text_main-color">
-                                скидок, бонусов
-                            </span>
-                            , условий оплаты.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
                     <Card.Img
                         variant="top"
                         src="/img/certificate.svg"
@@ -88,7 +70,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
                     <Card.Img
                         variant="top"
                         src="/img/hand.svg"
@@ -105,7 +87,24 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                    <Card.Img
+                        variant="top"
+                        src="/img/down.svg"
+                        className="company-description__image p-2"
+                    />
+                    <Card.Body>
+                        <Card.Title>Скидки и бонусы</Card.Title>
+                        <Card.Text>
+                            Существует гибкая система{' '}
+                            <span className="text_main-color">
+                                скидок, бонусов
+                            </span>
+                            , условий оплаты.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
                     <Card.Img
                         variant="top"
                         src="/img/wheels-truck.svg"
@@ -120,24 +119,7 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
-                    <Card.Img
-                        variant="top"
-                        src="/img/increase.svg"
-                        className="company-description__image p-2"
-                    />
-                    <Card.Body>
-                        <Card.Title>Выгодные условия</Card.Title>
-                        <Card.Text>
-                            Мы работаем на{' '}
-                            <span className="text_main-color">
-                                взаимовыгодных
-                            </span>{' '}
-                            условиях.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4">
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
                     <Card.Img
                         variant="top"
                         src="/img/pipes.svg"
@@ -154,18 +136,35 @@ const CompanyDescription = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                    <Card.Img
+                        variant="top"
+                        src="/img/increase.svg"
+                        className="company-description__image p-2"
+                    />
+                    <Card.Body>
+                        <Card.Title>Выгодные условия</Card.Title>
+                        <Card.Text>
+                            Мы работаем на{' '}
+                            <span className="text_main-color">
+                                взаимовыгодных
+                            </span>{' '}
+                            условиях.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
             </div>
             <div className="company-description__contacts">
                 <a
                     href="tel:"
-                    className="link company-description__contact my-3"
+                    className="btn btn-primary company-description__contact my-3 mr-3"
                 >
                     <img src="/img/phone.svg" alt="" className="icon pr-3" />
                     Позвоните нам
                 </a>
                 <a
                     href="mailto:"
-                    className="link company-description__contact my-3"
+                    className="btn btn-primary company-description__contact my-3"
                 >
                     <img src="/img/text.svg" alt="" className="icon pr-3" />
                     Отправьте вашу заявку

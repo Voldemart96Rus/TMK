@@ -5,6 +5,7 @@
     --main-color-light: #a4d6ff;
     --main-color-dark: #003b6b;
     --main-color-opaque: #004f8f70;
+    font-style: normal !important;
 }
 
 body {
@@ -28,7 +29,12 @@ ul {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
 
@@ -90,11 +96,13 @@ h5 {
     object-fit: cover;
 }
 
-.about .carousel-control-prev, .about .carousel-control-next {
+.about .carousel-control-prev,
+.about .carousel-control-next {
     height: calc(100% - 3rem);
 }
 
-.about .carousel-control-prev:hover, .about .carousel-control-next:hover {
+.about .carousel-control-prev:hover,
+.about .carousel-control-next:hover {
     background: #00000068;
 }
 

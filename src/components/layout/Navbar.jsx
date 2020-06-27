@@ -6,6 +6,7 @@ import './Navbar.css';
 
 const Navbar = ({history}) => {
     const [currentURL, setCurrentURL] = useState(history.location.pathname);
+    window.scrollTo({behavior: 'smooth', top: 0});
     useEffect(() => {
         setCurrentURL(history.location.pathname);
     }, [history.location.pathname]);

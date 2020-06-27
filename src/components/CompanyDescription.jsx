@@ -154,17 +154,17 @@ const CompanyDescription = () => {
                     </Card.Body>
                 </Card>
             </div>
-            <div className="company-description__contacts">
+            <div className="company-description__contacts my-3">
                 <a
                     href="tel:"
-                    className="btn btn-primary company-description__contact my-3 mr-3"
+                    className="btn btn-primary company-description__contact mb-3"
                 >
                     <img src="/img/phone.svg" alt="" className="icon pr-3" />
                     Позвоните нам
                 </a>
                 <a
                     href="mailto:"
-                    className="btn btn-primary company-description__contact my-3"
+                    className="btn btn-primary company-description__contact "
                 >
                     <img src="/img/text.svg" alt="" className="icon pr-3" />
                     Отправьте вашу заявку

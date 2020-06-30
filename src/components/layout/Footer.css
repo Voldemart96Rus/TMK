@@ -25,6 +25,12 @@
     display: none;
 }
 
+.footer__contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
 @media screen and (max-width: 767px) {
     .nav-item__catalog {
         display: inline;

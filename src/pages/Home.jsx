@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import CatalogAside from '../components/layout/CatalogAside';
 import CompanyDescription from '../components/CompanyDescription';
 
-function Home() {
+function Home({contacts}) {
     return (
         <section className="container-lg content about">
             <div className="row">
@@ -91,7 +91,7 @@ function Home() {
                                 />
                             </Carousel.Item>
                         </Carousel>
-                        <CompanyDescription />
+                        <CompanyDescription contacts={contacts} />
                     </section>
                 </div>
             </div>

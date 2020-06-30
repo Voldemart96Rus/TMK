@@ -18,6 +18,7 @@ import Product from '../pages/Product';
 import NotFound from '../pages/NotFound';
 
 import initialState from './initialState';
+import {contacts} from './constats';
 
 import './App.css';
 
@@ -27,9 +28,21 @@ function App() {
             <Navbar />
             <div className="container">
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route
+                        exact
+                        path="/"
+                        render={(props) => (
+                            <Home {...props} contacts={contacts} />
+                        )}
+                    />
                     <Route exact path="/delivery" component={Delivery} />
-                    <Route exact path="/contacts" component={Contacts} />
+                    <Route
+                        exact
+                        path="/contacts"
+                        render={(props) => (
+                            <Contacts {...props} contacts={contacts} />
+                        )}
+                    />
                     <Route exact path="/payment" component={Payment} />
                     <Route exact path="/production" component={Production} />
                     <Route exact path="/quality" component={Quality} />
@@ -70,7 +83,7 @@ function App() {
                     <Route component={NotFound} />
                 </Switch>
             </div>
-            <Footer />
+            <Footer contacts={contacts} />
         </Router>
     );
 }

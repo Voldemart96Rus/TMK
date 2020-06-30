@@ -30,10 +30,14 @@ const Product = ({items, item}) => {
                             />
                             <div className="flex-shrink-2 product-description">
                                 <h5>{currentItem.title}</h5>
-                                <p>
+                                {/* <p> */}
+                                <Form.Text className="text-muted my-3">
                                     Купить оптом c доставкой по РФ и ближнему
-                                    зарубежью. Цены уточняйте у менеджеров.
-                                </p>
+                                    зарубежью.
+                                    <br />
+                                    Цены уточняйте у менеджеров.
+                                </Form.Text>
+                                {/* </p> */}
                                 <div>
                                     {currentItem.options && (
                                         <Form>
@@ -60,7 +64,16 @@ const Product = ({items, item}) => {
                                                     </Form.Control>
                                                 </Form.Group>
                                             ))}
+                                            <Form.Text className="text-muted text_main-color-medium">
+                                                Не нашли нужных размеров?
+                                            </Form.Text>
+                                            <Form.Text className="text-muted col-10 p-0">
+                                                Оставте заказ и укажите
+                                                необходимые размеры и параметры
+                                                в комментарии к заказу.
+                                            </Form.Text>
                                             <Button
+                                                className="mt-3 px-4"
                                                 variant="primary"
                                                 onClick={handleShow}
                                             >

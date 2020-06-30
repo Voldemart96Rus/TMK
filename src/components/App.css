@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     --main-color: #004f8f;
+    --main-color-medium: #0062cc;
     --main-color-light: #a4d6ff;
     --main-color-dark: #003b6b;
     --main-color-opaque: #004f8f70;
@@ -51,6 +52,10 @@ h5 {
 
 .text_main-color {
     color: var(--main-color);
+}
+
+.text_main-color-medium {
+    color: var(--main-color-medium) !important;
 }
 
 .bg-lightgrey {
@@ -144,4 +149,19 @@ h5 {
 .icon {
     width: 2rem;
     height: 2rem;
+    fill: #fff;
+}
+
+.icon_sm {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #228ce2;
+}
+
+.tell_color {
+    color: var(--main-color-dark);
+}
+
+.tell_color:hover {
+    color: var(--main-color);
 }

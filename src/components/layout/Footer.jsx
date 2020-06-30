@@ -8,7 +8,7 @@ const Footer = ({contacts}) => {
         <footer className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-xs-12 col-sm-4">
+                    <div className="col-xs-12 col-md-6 col-lg-4 mb-4">
                         <div className="hr-bt">
                             <h5>О НАС</h5>
                         </div>
@@ -73,7 +73,7 @@ const Footer = ({contacts}) => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-xs-12 col-sm-4">
+                    <div className="col-xs-12 col-md-6 col-lg-4 mb-4">
                         <div className="hr-bt">
                             <h5>КОНТАКТЫ</h5>
                         </div>

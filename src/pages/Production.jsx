@@ -25,7 +25,7 @@ const Production = () => {
                                 ППУ изоляции и фасонных изделий.
                             </p>
                             <div className="row">
-                                <div className="col-md-6 p-2">
+                                <div className="col-md-6 p-2 d-flex">
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title">
@@ -40,7 +40,7 @@ const Production = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-md-6 p-2">
+                                <div className="col-md-6 p-2 d-flex">
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title">
@@ -56,7 +56,7 @@ const Production = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-md-6 p-2">
+                                <div className="col-md-6 p-2 d-flex">
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title">
@@ -71,7 +71,7 @@ const Production = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-md-6 p-2">
+                                <div className="col-md-6 p-2 d-flex">
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title">

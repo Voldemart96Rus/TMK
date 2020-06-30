@@ -9,10 +9,10 @@ const Catalog = ({category}) => {
             <h3 className="block__header">Каталог</h3>
             <div className="row">
                 {category.map((item) => (
-                    <div className="col-md-4 p-2" key={item.id}>
-                        <Link to={item.URL}>
+                    <div className="col-md-4 p-2 d-flex" key={item.id}>
+                        <Link to={item.URL} className="d-flex">
                             <div className="card">
-                                <div className="catalog__card-body card-body">
+                                <div className="card-body">
                                     <h5 className="card-title catalog-category">
                                         {item.title}
                                     </h5>

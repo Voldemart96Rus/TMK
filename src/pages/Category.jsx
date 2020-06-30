@@ -19,8 +19,8 @@ const Category = ({categoryItems, items, category}) => {
                     </h3>
                     <div className="row">
                         {listItems.map((item, i) => (
-                            <div className="col-md-4 p-2" key={i}>
-                                <Link to={items[item].URL}>
+                            <div className="col-md-4 p-2 d-flex" key={i}>
+                                <Link to={items[item].URL} className="d-flex">
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title catalog-category">

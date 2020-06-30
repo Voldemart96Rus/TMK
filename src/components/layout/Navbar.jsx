@@ -21,7 +21,7 @@ const Navbar = ({history}) => {
                         alt="Лого"
                     />
                     <div className="header__company-description">
-                        ППУ ТМК
+                        ППУТМК
                         <br />
                         &laquo;Промышленная компания&raquo;
                     </div>

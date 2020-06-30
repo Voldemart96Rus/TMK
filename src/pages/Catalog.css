@@ -10,7 +10,3 @@
 .catalog-category__img {
     object-fit: contain;
 }
-
-.catalog__card-body {
-    height: 78px;
-}

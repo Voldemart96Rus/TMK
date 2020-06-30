@@ -14,7 +14,7 @@ const CompanyDescription = () => {
                     <Card.Body>
                         <Card.Title>О нас</Card.Title>
                         <Card.Text>
-                            ППУ ТМК специализируется на производстве и поставке{' '}
+                            ППУТМК специализируется на производстве и поставке{' '}
                             <span className="text_main-color">
                                 труб ППУ и фасонных изделий
                             </span>{' '}

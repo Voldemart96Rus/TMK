@@ -48,9 +48,7 @@ const Delivery = () => {
                             <div className="tree"></div>
                             <div className="tree"></div>
                             <div className="tree"></div>
-                            <div className="rock"></div>
                             <div className="truck"></div>
-                            <div className="wheels"></div>
                         </div>
                     </section>
                 </div>

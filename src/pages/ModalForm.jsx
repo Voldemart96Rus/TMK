@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import $ from 'jquery';
+
+import {mailPath, contacts} from '../components/constants.js';
 
 const ModalForm = ({show, handleClose, product}) => {
     const initialState = {
@@ -19,22 +22,41 @@ const ModalForm = ({show, handleClose, product}) => {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        fetch('/mail.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(state),
-        })
-            .then(() => {
+        $.ajax({
+            type: 'POST',
+            url: mailPath,
+            data: $('.order-form').serialize(),
+            success: () => {
                 alert('Заказ отправлен');
-            })
-            .catch((e) => {
+            },
+            error: () => {
                 console.error(e);
-                alert('Возникла ошибка. Свяжитесь с нами по номеру XXXX');
-            });
+                alert(
+                    'Возникла ошибка. Свяжитесь с нами по номеру ' +
+                        contacts.tel
+                );
+            },
+        });
+
+        // fetch(mailPath, {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(state),
+        //     credentials: 'same-origin',
+        //     cache: 'no-cache',
+        // })
+        //     .then(() => {
+        //         alert('Заказ отправлен');
+        //     })
+        //     .catch((e) => {
+        //         console.error(e);
+        //         alert('Возникла ошибка. Свяжитесь с нами по номеру XXXX');
+        //     });
 
         setState(initialState);
+        handleClose();
     };
 
     return (
@@ -43,7 +65,12 @@ const ModalForm = ({show, handleClose, product}) => {
                 <Modal.Title>Оформление заказа</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <Form onSubmit={onSubmit}>
+                <Form onSubmit={onSubmit} className="order-form">
+                    <input
+                        type="hidden"
+                        name="form_subject"
+                        value="Заказ товара на сайте ППУТМК"
+                    />
                     <div className="text-primary mb-4">{product.title}</div>
                     <Form.Group controlId="formBasicName">
                         <Form.Control

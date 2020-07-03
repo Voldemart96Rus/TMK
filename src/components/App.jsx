@@ -18,7 +18,7 @@ import Product from '../pages/Product';
 import NotFound from '../pages/NotFound';
 
 import initialState from './initialState';
-import {contacts} from './constats';
+import {contacts} from './constants';
 
 import './App.css';
 

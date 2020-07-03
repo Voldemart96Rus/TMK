@@ -10,12 +10,17 @@ const Contacts = ({contacts}) => {
                 <div className="col col-md-7 col-lg-9">
                     <section className="delivery">
                         <h3 className="block__header">Контакты</h3>
-                        <p>Мы находимся по адресу: {contacts.address}</p>
+                        <p>
+                            Мы находимся по адресу:{' '}
+                            <span className="text_main-color link">
+                                {contacts.address}
+                            </span>
+                        </p>
                         <p>
                             Email для связи с нами:{' '}
                             <a
                                 href={'mailto:' + contacts.email}
-                                className="tell_color"
+                                className="text_main-color-medium link"
                             >
                                 {contacts.email}
                             </a>
@@ -24,7 +29,7 @@ const Contacts = ({contacts}) => {
                             Телефон для связи:{' '}
                             <a
                                 href={'tel:' + contacts.tel}
-                                className="tell_color"
+                                className="text_main-color-medium link"
                             >
                                 {contacts.tel}
                             </a>

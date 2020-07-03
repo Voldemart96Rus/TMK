@@ -20,8 +20,11 @@ const Category = ({categoryItems, items, category}) => {
                     <div className="row">
                         {listItems.map((item, i) => (
                             <div className="col-md-4 p-2 d-flex" key={i}>
-                                <Link to={items[item].URL} className="d-flex">
-                                    <div className="card">
+                                <Link
+                                    to={items[item].URL}
+                                    className="container-fluid"
+                                >
+                                    <div className="card pb-4">
                                         <div className="card-body">
                                             <h5 className="card-title catalog-category">
                                                 {items[item].title}

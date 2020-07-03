@@ -10,8 +10,8 @@ const Catalog = ({category}) => {
             <div className="row">
                 {category.map((item) => (
                     <div className="col-md-4 p-2 d-flex" key={item.id}>
-                        <Link to={item.URL} className="d-flex">
-                            <div className="card">
+                        <Link to={item.URL} className="container-fluid">
+                            <div className="card pb-4">
                                 <div className="card-body">
                                     <h5 className="card-title catalog-category">
                                         {item.title}

@@ -30,14 +30,12 @@ const Product = ({items, item}) => {
                             />
                             <div className="flex-shrink-2 product-description">
                                 <h5>{currentItem.title}</h5>
-                                {/* <p> */}
                                 <Form.Text className="text-muted my-3">
                                     Купить оптом c доставкой по РФ и ближнему
                                     зарубежью.
                                     <br />
                                     Цены уточняйте у менеджеров.
                                 </Form.Text>
-                                {/* </p> */}
                                 <div>
                                     {currentItem.options && (
                                         <Form>

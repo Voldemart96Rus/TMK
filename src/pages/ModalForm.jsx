@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import Inputmask from 'inputmask';
 import $ from 'jquery';
 
 import {mailPath, contacts} from '../components/constants.js';
@@ -16,6 +17,12 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
 
     const [state, setState] = useState(initialState);
 
+    useEffect(() => {
+        if (show) {
+            new Inputmask('+7 999 999-99-99').mask($('.phone-number-input'));
+        }
+    }, [show]);
+
     const onChange = (e) =>
         setState({...state, [e.target.name]: e.target.value});
 
@@ -27,18 +34,21 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
             url: mailPath,
             data: $('.order-form').serialize(),
             success: () => {
-                alert('Заказ отправлен');
+                setTimeout(() => alert('Заказ отправлен'), 1000);
             },
             error: () => {
                 console.error(e);
-                alert(
-                    'Возникла ошибка. Свяжитесь с нами по номеру ' +
-                        contacts.tel
+                setTimeout(() =>
+                    alert(
+                        'Возникла ошибка. Свяжитесь с нами по номеру ' +
+                            contacts.tel
+                    )
                 );
             },
         });
 
         setState(initialState);
+
         handleClose();
     };
 
@@ -88,8 +98,9 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
                     <Form.Group controlId="formBasicPhone">
                         <Form.Control
                             type="tel"
+                            className="phone-number-input"
                             placeholder="Телефон*"
-                            // pattern="\+7 \d{3} \d{3}-\d{2}-\d{2}"
+                            pattern="\+7 \d{3} \d{3}-\d{2}-\d{2}"
                             value={state.tel}
                             onChange={onChange}
                             name="tel"

@@ -144,6 +144,18 @@ const Footer = ({contacts}) => {
                             </li>
                         </ul>
                     </div>
+                    <div className="col-xs-12 col-lg-4 mb-4 d-flex">
+                        <a
+                            href="https://ekb-sites.ru/"
+                            className="site-order-link"
+                        >
+                            <img
+                                className="site-order-link__img"
+                                src="/img/site-order-white.png"
+                                alt="Чтобы заказать сайт перейдите по адресу https://ekb-sites.ru/"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="hr-top">

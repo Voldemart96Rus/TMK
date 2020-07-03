@@ -40,7 +40,7 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
                 console.error(e);
                 setTimeout(() =>
                     alert(
-                        'Возникла ошибка. Свяжитесь с нами по номеру ' +
+                        'Возникла ошибка. Пожалуйста, свяжитесь с нами по номеру ' +
                             contacts.tel
                     )
                 );

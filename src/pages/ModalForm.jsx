@@ -1,9 +1,13 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import Inputmask from 'inputmask';
+import $ from 'jquery';
 
-const ModalForm = ({show, handleClose, product}) => {
+import {mailPath, contacts} from '../components/constants.js';
+
+const ModalForm = ({show, handleClose, product, selectedOptions}) => {
     const initialState = {
         name: '',
         email: '',
@@ -13,28 +17,39 @@ const ModalForm = ({show, handleClose, product}) => {
 
     const [state, setState] = useState(initialState);
 
+    useEffect(() => {
+        if (show) {
+            new Inputmask('+7 999 999-99-99').mask($('.phone-number-input'));
+        }
+    }, [show]);
+
     const onChange = (e) =>
         setState({...state, [e.target.name]: e.target.value});
 
     const onSubmit = (e) => {
         e.preventDefault();
 
-        fetch('/mail.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
+        $.ajax({
+            type: 'POST',
+            url: mailPath,
+            data: $('.order-form').serialize(),
+            success: () => {
+                setTimeout(() => alert('Заказ отправлен'), 1000);
             },
-            body: JSON.stringify(state),
-        })
-            .then(() => {
-                alert('Заказ отправлен');
-            })
-            .catch((e) => {
+            error: () => {
                 console.error(e);
-                alert('Возникла ошибка. Свяжитесь с нами по номеру XXXX');
-            });
+                setTimeout(() =>
+                    alert(
+                        'Возникла ошибка. Пожалуйста, свяжитесь с нами по номеру ' +
+                            contacts.tel
+                    )
+                );
+            },
+        });
 
         setState(initialState);
+
+        handleClose();
     };
 
     return (
@@ -43,7 +58,22 @@ const ModalForm = ({show, handleClose, product}) => {
                 <Modal.Title>Оформление заказа</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <Form onSubmit={onSubmit}>
+                <Form onSubmit={onSubmit} className="order-form">
+                    <input
+                        type="hidden"
+                        name="form_subject"
+                        value="Заказ товара на сайте ППУТМК"
+                    />
+                    <input type="hidden" name="Товар" value={product.title} />
+                    {Object.entries(selectedOptions).map(
+                        ([optionName, optionValue]) => (
+                            <input
+                                type="hidden"
+                                name={optionName}
+                                value={optionValue}
+                            />
+                        )
+                    )}
                     <div className="text-primary mb-4">{product.title}</div>
                     <Form.Group controlId="formBasicName">
                         <Form.Control
@@ -68,8 +98,9 @@ const ModalForm = ({show, handleClose, product}) => {
                     <Form.Group controlId="formBasicPhone">
                         <Form.Control
                             type="tel"
+                            className="phone-number-input"
                             placeholder="Телефон*"
-                            // pattern="\+7 \d{3} \d{3}-\d{2}-\d{2}"
+                            pattern="\+7 \d{3} \d{3}-\d{2}-\d{2}"
                             value={state.tel}
                             onChange={onChange}
                             name="tel"

@@ -24,14 +24,14 @@ const Quality = () => {
                             <div>
                                 <div className="card mb-3">
                                     <div className="row no-gutters">
-                                        <div className="col-md-4">
+                                        <div className="col-lg-4">
                                             <img
                                                 src="img/plant.jpg"
                                                 className="card-img"
                                                 alt="Трубный металлургический завод"
                                             />
                                         </div>
-                                        <div className="col-md-8">
+                                        <div className="col-lg-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">
                                                     Труба производится на
@@ -50,14 +50,14 @@ const Quality = () => {
                                 </div>
                                 <div className="card mb-3">
                                     <div className="row no-gutters">
-                                        <div className="col-md-4">
+                                        <div className="col-lg-4">
                                             <img
                                                 src="img/ppu.jfif"
                                                 className="card-img"
                                                 alt="ППУ изоляция"
                                             />
                                         </div>
-                                        <div className="col-md-8">
+                                        <div className="col-lg-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">
                                                     Производство трубы в ППУ
@@ -97,14 +97,14 @@ const Quality = () => {
                                 </div>
                                 <div className="card mb-3">
                                     <div className="row no-gutters">
-                                        <div className="col-md-4">
+                                        <div className="col-lg-4">
                                             <img
                                                 src="img/zink.jpg"
                                                 className="card-img"
                                                 alt="Оцинкованные трубы"
                                             />
                                         </div>
-                                        <div className="col-md-8">
+                                        <div className="col-lg-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">
                                                     Производство трубы в
@@ -157,7 +157,7 @@ const Quality = () => {
                                 </div>
                                 <div className="card mb-3">
                                     <div className="row no-gutters">
-                                        <div className="col-md-4">
+                                        <div className="col-lg-4">
                                             <img
                                                 src="img/catalog/Отводы В Изоляции/ppu-zinc-shaped.png"
                                                 className="card-img of_contain"
@@ -165,7 +165,7 @@ const Quality = () => {
                                                 и опоры"
                                             />
                                         </div>
-                                        <div className="col-md-8">
+                                        <div className="col-lg-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">
                                                     Производим фасонные изделия

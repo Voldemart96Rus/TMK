@@ -6,7 +6,7 @@ import $ from 'jquery';
 
 import {mailPath, contacts} from '../components/constants.js';
 
-const ModalForm = ({show, handleClose, product}) => {
+const ModalForm = ({show, handleClose, product, selectedOptions}) => {
     const initialState = {
         name: '',
         email: '',
@@ -38,23 +38,6 @@ const ModalForm = ({show, handleClose, product}) => {
             },
         });
 
-        // fetch(mailPath, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(state),
-        //     credentials: 'same-origin',
-        //     cache: 'no-cache',
-        // })
-        //     .then(() => {
-        //         alert('Заказ отправлен');
-        //     })
-        //     .catch((e) => {
-        //         console.error(e);
-        //         alert('Возникла ошибка. Свяжитесь с нами по номеру XXXX');
-        //     });
-
         setState(initialState);
         handleClose();
     };
@@ -71,6 +54,16 @@ const ModalForm = ({show, handleClose, product}) => {
                         name="form_subject"
                         value="Заказ товара на сайте ППУТМК"
                     />
+                    <input type="hidden" name="Товар" value={product.title} />
+                    {Object.entries(selectedOptions).map(
+                        ([optionName, optionValue]) => (
+                            <input
+                                type="hidden"
+                                name={optionName}
+                                value={optionValue}
+                            />
+                        )
+                    )}
                     <div className="text-primary mb-4">{product.title}</div>
                     <Form.Group controlId="formBasicName">
                         <Form.Control

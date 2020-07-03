@@ -9,10 +9,31 @@ import './Product.css';
 const Product = ({items, item}) => {
     const currentItem = items[item];
 
-    const [show, setShow] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [selectedOptions, setSelectedOptions] = useState(
+        getInitialOptions(currentItem)
+    );
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleClose = () => setShowModal(false);
+    const handleShow = () => setShowModal(true);
+
+    const handleOptionSelection = (e) =>
+        setSelectedOptions({
+            ...selectedOptions,
+            [e.target.name]: e.target.value,
+        });
+
+    function getInitialOptions(item) {
+        const options = {};
+
+        item.options.forEach((option) => {
+            options[option.name] = option.values.length
+                ? option.values[0]
+                : 'Не выбрано';
+        });
+
+        return options;
+    }
 
     return (
         <section className="container-lg content">
@@ -48,13 +69,27 @@ const Product = ({items, item}) => {
                                                         {itm.name}
                                                     </Form.Label>
                                                     <Form.Control
+                                                        value={
+                                                            selectedOptions[
+                                                                itm.name
+                                                            ]
+                                                        }
+                                                        name={itm.name}
+                                                        onChange={
+                                                            handleOptionSelection
+                                                        }
                                                         as="select"
                                                         size="sm"
                                                         custom
                                                     >
                                                         {itm.values.map(
                                                             (value, i) => (
-                                                                <option key={i}>
+                                                                <option
+                                                                    key={i}
+                                                                    value={
+                                                                        value
+                                                                    }
+                                                                >
                                                                     {value}
                                                                 </option>
                                                             )
@@ -78,9 +113,12 @@ const Product = ({items, item}) => {
                                                 Заказать
                                             </Button>
                                             <ModalForm
-                                                show={show}
+                                                show={showModal}
                                                 handleClose={handleClose}
                                                 product={currentItem}
+                                                selectedOptions={
+                                                    selectedOptions
+                                                }
                                             />
                                         </Form>
                                     )}

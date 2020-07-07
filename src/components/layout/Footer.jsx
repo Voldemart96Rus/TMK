@@ -140,7 +140,15 @@ const Footer = ({contacts}) => {
                                     alt="{contacts.address}"
                                     className="icon icon_sm pr-2"
                                 />
-                                {contacts.address}
+                                {contacts.address1}
+                            </li>
+                            <li className="footer__contact-item align-items-start">
+                                <img
+                                    src="/img/company-address.svg"
+                                    alt="{contacts.address}"
+                                    className="icon icon_sm pr-2"
+                                />
+                                {contacts.address2}
                             </li>
                         </ul>
                     </div>

@@ -2,12 +2,14 @@ import React from 'react';
 import {YMaps, Map, Placemark} from 'react-yandex-maps';
 
 import CatalogAside from '../components/layout/CatalogAside';
-import {companyName, geoPosition} from '../components/constants';
+import {companyName, geoPosition, placemark} from '../components/constants';
+
+import './Contact.css';
 
 const Contacts = ({contacts}) => {
     const mapData = {
         center: [geoPosition.lat, geoPosition.lon],
-        zoom: 16.2,
+        zoom: 12,
         behaviors: ['default', 'scrollZoom'],
         controls: [],
         placemarkProperties: {
@@ -26,22 +28,27 @@ const Contacts = ({contacts}) => {
                             <div className="col-lg-6 pb-4 pb-lg-0">
                                 <YMaps>
                                     <Map width={'100%'} defaultState={mapData}>
-                                        <Placemark
-                                            geometry={mapData.center}
-                                            properties={
-                                                mapData.placemarkProperties
-                                            }
-                                        />
+                                        {placemark.map((el) => (
+                                            <Placemark
+                                                geometry={el}
+                                                properties={
+                                                    mapData.placemarkProperties
+                                                }
+                                            />
+                                        ))}
                                     </Map>
                                 </YMaps>
                             </div>
                             <div className="col-lg-6 px-lg-3">
-                                <p>
-                                    Мы находимся по адресу:{' '}
-                                    <span className="text_main-color">
-                                        {contacts.address}
-                                    </span>
-                                </p>
+                                <span>Мы находимся по адресу:</span>
+                                <ul className="list-address">
+                                    <li className="text_main-color">
+                                        {contacts.address1}
+                                    </li>
+                                    <li className="text_main-color">
+                                        {contacts.address2}
+                                    </li>
+                                </ul>
                                 <p>
                                     Email для связи с нами:{' '}
                                     <a

@@ -37,7 +37,7 @@ function Home({contacts}) {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100 carousel__image"
-                                    src="/img/carousel-3.jfif"
+                                    src="/img/carousel-3.jpg"
                                     alt=""
                                 />
                             </Carousel.Item>

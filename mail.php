@@ -1,7 +1,7 @@
 <?php
 
 $method = $_SERVER['REQUEST_METHOD'];
-$admin_email = 'cheraneva197@yandex.ru';
+$admin_email = 'PPUTMK@gmail.com';
 $project_name = 'ППУТМК "Промышленная компания"';
 
 if ($method === 'POST') {

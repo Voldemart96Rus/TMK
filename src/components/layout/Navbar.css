@@ -5,6 +5,7 @@
     width: 100vw;
     opacity: 0.9;
     background: #181818 !important;
+    min-width: 320px;
 }
 
 .navbar-brand {

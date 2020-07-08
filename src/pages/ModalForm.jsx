@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {Fragment, useState, useEffect} from 'react';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
@@ -59,6 +59,7 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
             </Modal.Header>
             <Modal.Body>
                 <Form onSubmit={onSubmit} className="order-form">
+                    <div className="text-primary">{product.title}</div>
                     <input
                         type="hidden"
                         name="form_subject"
@@ -67,15 +68,19 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
                     <input type="hidden" name="Товар" value={product.title} />
                     {Object.entries(selectedOptions).map(
                         ([optionName, optionValue]) => (
-                            <input
-                                type="hidden"
-                                name={optionName}
-                                value={optionValue}
-                            />
+                            <Fragment>
+                                <input
+                                    type="hidden"
+                                    name={optionName}
+                                    value={optionValue}
+                                />
+                                <Form.Text className="text-muted">
+                                    {optionName}: {optionValue}
+                                </Form.Text>
+                            </Fragment>
                         )
                     )}
-                    <div className="text-primary mb-4">{product.title}</div>
-                    <Form.Group controlId="formBasicName">
+                    <Form.Group controlId="formBasicName" className="mt-4">
                         <Form.Control
                             type="text"
                             placeholder="Имя*"

@@ -128,6 +128,20 @@ const CatalogAside = ({isActive}) => {
                                     Труба ПНД
                                 </Link>
                             </li>
+                            <li
+                                className={
+                                    isActive === 'steel_pipe'
+                                        ? 'category-menu category-menu_active'
+                                        : 'category-menu'
+                                }
+                            >
+                                <Link
+                                    to="/category/steel_pipe"
+                                    className="catalog-links"
+                                >
+                                    Труба стальная
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

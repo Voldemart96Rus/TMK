@@ -18,7 +18,7 @@ function Home({contacts}) {
                                 <picture>
                                     <source
                                         media="(max-width: 767px)"
-                                        srcset="/img/carousel-1-mobile.jpg"
+                                        srcSet="/img/carousel-1-mobile.jpg"
                                     />
                                     <img
                                         className="d-block w-100 carousel__image carousel__image_sm"

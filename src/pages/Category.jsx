@@ -3,12 +3,13 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import CatalogAside from '../components/layout/CatalogAside';
+import NotFound from './NotFound';
 
 import './Category.css';
 
 const Category = ({categoryItems, items, category}) => {
+    if (categoryItems[category] === undefined) return <NotFound />;
     const listItems = categoryItems[category].items;
-
     return (
         <section className="container-lg content">
             <div className="row">

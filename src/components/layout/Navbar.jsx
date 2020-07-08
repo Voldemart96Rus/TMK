@@ -28,7 +28,6 @@ const Navbar = ({history}) => {
                         </span>
                     </div>
                 </Link>
-
                 <DropdownButton
                     alignRight
                     title="Меню"
@@ -116,7 +115,6 @@ const Navbar = ({history}) => {
                         Контакты
                     </Dropdown.Item>
                 </DropdownButton>
-
                 <ul className="navbar-nav">
                     <li
                         className={

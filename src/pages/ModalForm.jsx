@@ -68,7 +68,7 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
                     <input type="hidden" name="Товар" value={product.title} />
                     {Object.entries(selectedOptions).map(
                         ([optionName, optionValue]) => (
-                            <Fragment>
+                            <Fragment key={optionName}>
                                 <input
                                     type="hidden"
                                     name={optionName}

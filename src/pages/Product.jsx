@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button';
 
 import CatalogAside from '../components/layout/CatalogAside';
 import ModalForm from './ModalForm';
+import NotFound from './NotFound';
+
 import './Product.css';
 
 const Product = ({items, item}) => {
@@ -11,8 +13,10 @@ const Product = ({items, item}) => {
 
     const [showModal, setShowModal] = useState(false);
     const [selectedOptions, setSelectedOptions] = useState(
-        getInitialOptions(currentItem)
+        currentItem ? getInitialOptions(currentItem) : null
     );
+
+    if (currentItem === undefined) return <NotFound />;
 
     const handleClose = () => setShowModal(false);
     const handleShow = () => setShowModal(true);

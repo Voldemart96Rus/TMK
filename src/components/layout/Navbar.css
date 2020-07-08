@@ -2,9 +2,10 @@
     top: 0;
     z-index: 999;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     opacity: 0.9;
     background: #181818 !important;
+    overflow-x: hidden;
 }
 
 .navbar-brand {

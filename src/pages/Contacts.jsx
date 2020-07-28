@@ -59,13 +59,36 @@ const Contacts = ({contacts}) => {
                                     </a>
                                 </p>
                                 <p>
-                                    Телефон для связи:{' '}
+                                    Email филиала ООО «Металлик»:{' '}
                                     <a
-                                        href={'tel:' + contacts.tel}
+                                        href={
+                                            'mailto:' + contacts.metallicEmail
+                                        }
                                         className="text_main-color-medium link"
                                     >
-                                        {contacts.tel}
+                                        {contacts.email}
                                     </a>
+                                </p>
+                                <p>
+                                    Номера телефонов для связи:{' '}
+                                    <ul>
+                                        <li>
+                                            <a
+                                                href={'tel:' + contacts.tel}
+                                                className="text_main-color-medium link"
+                                            >
+                                                {contacts.tel}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href={'tel:' + contacts.tel2}
+                                                className="text_main-color-medium link"
+                                            >
+                                                {contacts.tel2}
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>

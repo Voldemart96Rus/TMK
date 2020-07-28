@@ -123,6 +123,11 @@ const Footer = ({contacts}) => {
                                     {contacts.tel}
                                 </a>
                             </li>
+                            <li className="footer__contact-item footer__contact-item_pl">
+                                <a href={'tel:' + contacts.tel2}>
+                                    {contacts.tel2}
+                                </a>
+                            </li>
                             <li className="footer__contact-item">
                                 <a href={'mailto:' + contacts.email}>
                                     <img
@@ -130,8 +135,12 @@ const Footer = ({contacts}) => {
                                         alt="{contacts.email}"
                                         className="icon icon_sm pr-2"
                                     />
-
                                     {contacts.email}
+                                </a>
+                            </li>
+                            <li className="footer__contact-item footer__contact-item_pl">
+                                <a href={'mailto:' + contacts.metallicEmail}>
+                                    {contacts.metallicEmail}
                                 </a>
                             </li>
                             <li className="footer__contact-item align-items-start">

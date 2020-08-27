@@ -70,7 +70,24 @@ const Contacts = ({contacts}) => {
                                     </a>
                                 </p>
                                 <p>
-                                    Номера телефонов для связи:{' '}
+                                    Отдел сбыта:
+                                    <ul>
+                                        {contacts.salesDepartment.phoneNumbers.map(
+                                            (tel) => (
+                                                <li key={tel}>
+                                                    <a
+                                                        href={'tel:' + tel}
+                                                        className="text_main-color-medium link"
+                                                    >
+                                                        {tel}
+                                                    </a>
+                                                </li>
+                                            )
+                                        )}
+                                    </ul>
+                                </p>
+                                <p>
+                                    Номера телефонов для связи:
                                     <ul>
                                         <li>
                                             <a

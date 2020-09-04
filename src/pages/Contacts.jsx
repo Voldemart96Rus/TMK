@@ -66,7 +66,7 @@ const Contacts = ({contacts}) => {
                                         }
                                         className="text_main-color-medium link"
                                     >
-                                        {contacts.email}
+                                        {contacts.metallicEmail}
                                     </a>
                                 </p>
                                 <p>
@@ -95,14 +95,6 @@ const Contacts = ({contacts}) => {
                                                 className="text_main-color-medium link"
                                             >
                                                 {contacts.tel}
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href={'tel:' + contacts.tel2}
-                                                className="text_main-color-medium link"
-                                            >
-                                                {contacts.tel2}
                                             </a>
                                         </li>
                                     </ul>

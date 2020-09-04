@@ -119,16 +119,20 @@ const Footer = ({contacts}) => {
                                             </g>
                                         </g>
                                     </svg>
-
                                     {contacts.tel}
                                 </a>
                             </li>
-                            <li className="footer__contact-item footer__contact-item_pl">
-                                <a href={'tel:' + contacts.tel2}>
-                                    {contacts.tel2}
-                                </a>
-                            </li>
-                            <li className="footer__contact-item">
+                            {contacts.salesDepartment.phoneNumbers.map(
+                                (tel) => (
+                                    <li
+                                        className="footer__contact-item pl-4"
+                                        key={tel}
+                                    >
+                                        <a href={'tel:' + tel}>{tel}</a>
+                                    </li>
+                                )
+                            )}
+                            <li className="footer__contact-item mt-3">
                                 <a href={'mailto:' + contacts.email}>
                                     <img
                                         src="/img/mail.svg"
@@ -136,11 +140,6 @@ const Footer = ({contacts}) => {
                                         className="icon icon_sm pr-2"
                                     />
                                     {contacts.email}
-                                </a>
-                            </li>
-                            <li className="footer__contact-item footer__contact-item_pl">
-                                <a href={'mailto:' + contacts.metallicEmail}>
-                                    {contacts.metallicEmail}
                                 </a>
                             </li>
                             <li className="footer__contact-item align-items-start">

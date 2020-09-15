@@ -45,7 +45,9 @@ const Product = ({items, item}) => {
                 <CatalogAside />
                 <div className="col col-md-7 col-lg-9">
                     <section className="block">
-                        <h3 className="block__header">{currentItem.title}</h3>
+                        <h3 className="block__header product__block__header">
+                            {currentItem.title}
+                        </h3>
                         <div className="d-flex flex-wrap product-wrapper">
                             <img
                                 src={currentItem.img}

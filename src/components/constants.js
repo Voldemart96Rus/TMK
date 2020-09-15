@@ -1,6 +1,14 @@
 export const contacts = {
     email: 'PPUTMK@gmail.com',
-    tel: '+7 922 175-68-00',
+    metallicEmail: 'metallik73@mail.ru',
+    tel: '+7 (922) 175-68-00',
+    salesDepartment: {
+        phoneNumbers: [
+            '+7 (922) 189-98-80',
+            '+7 (922) 131-43-66',
+            '+7 (343) 382-56-08',
+        ],
+    },
     address1: 'Екатеринбург ул. Фурманова 109, офис 205',
     address2: 'Екатеринбург ул. Машинная 44/1, офисс 155',
 };

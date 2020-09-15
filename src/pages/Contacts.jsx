@@ -59,13 +59,45 @@ const Contacts = ({contacts}) => {
                                     </a>
                                 </p>
                                 <p>
-                                    Телефон для связи:{' '}
+                                    Email филиала ООО «Металлик»:{' '}
                                     <a
-                                        href={'tel:' + contacts.tel}
+                                        href={
+                                            'mailto:' + contacts.metallicEmail
+                                        }
                                         className="text_main-color-medium link"
                                     >
-                                        {contacts.tel}
+                                        {contacts.metallicEmail}
                                     </a>
+                                </p>
+                                <p>
+                                    Отдел сбыта:
+                                    <ul>
+                                        {contacts.salesDepartment.phoneNumbers.map(
+                                            (tel) => (
+                                                <li key={tel}>
+                                                    <a
+                                                        href={'tel:' + tel}
+                                                        className="text_main-color-medium link"
+                                                    >
+                                                        {tel}
+                                                    </a>
+                                                </li>
+                                            )
+                                        )}
+                                    </ul>
+                                </p>
+                                <p>
+                                    Номера телефонов для связи:
+                                    <ul>
+                                        <li>
+                                            <a
+                                                href={'tel:' + contacts.tel}
+                                                className="text_main-color-medium link"
+                                            >
+                                                {contacts.tel}
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>

@@ -119,18 +119,26 @@ const Footer = ({contacts}) => {
                                             </g>
                                         </g>
                                     </svg>
-
                                     {contacts.tel}
                                 </a>
                             </li>
-                            <li className="footer__contact-item">
+                            {contacts.salesDepartment.phoneNumbers.map(
+                                (tel) => (
+                                    <li
+                                        className="footer__contact-item pl-4"
+                                        key={tel}
+                                    >
+                                        <a href={'tel:' + tel}>{tel}</a>
+                                    </li>
+                                )
+                            )}
+                            <li className="footer__contact-item mt-3">
                                 <a href={'mailto:' + contacts.email}>
                                     <img
                                         src="/img/mail.svg"
                                         alt="{contacts.email}"
                                         className="icon icon_sm pr-2"
                                     />
-
                                     {contacts.email}
                                 </a>
                             </li>
